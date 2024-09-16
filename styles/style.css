@@ -89,10 +89,40 @@
   overflow: visible;
 }
 
+.dropdown-button {
+  position: relative;
+}
+
+.dropdown-button:hover {
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.dropdown-button-bg {
+  width: 100%;
+  height: 0.8rem;
+  position: absolute;
+  z-index: -1;
+  background-color: rgb(19, 19, 19);
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-button:hover > .dropdown-button-bg {
+  transform: scale(1, 1);
+}
+
 .dropdown {
   position: absolute;
   top: 48px;
+  overflow: visible;
+}
+
+.dropdown-text {
+  opacity: 0;
   display: none;
+  transform: translateX(16px);
 }
 
 .cart-button {
