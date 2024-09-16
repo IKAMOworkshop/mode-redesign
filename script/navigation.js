@@ -378,3 +378,92 @@ generalButton.addEventListener('click', () => {
             accessoryStates = false
         }
 })
+
+// Dropdown reset on Click
+for (let i = 0 ; i < keyboardLinks.length ; i++){
+    keyboardLinks[i].addEventListener('click', () => {
+        gsap.to(keyboardLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < keyboardLinks.length ; i++){
+                    keyboardLinks[i].style.display = 'none';
+                }
+            }
+        })
+
+        keyboardStates = false
+    })
+}
+
+for (let i = 0 ; i < componentLinks.length ; i++){
+    componentLinks[i].addEventListener('click', () => {
+        gsap.to(componentLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < componentLinks.length ; i++){
+                    componentLinks[i].style.display = 'none';
+                }
+            }
+        })
+
+        componentStates = false
+    })
+}
+
+for (let i = 0 ; i < accessoriesLinks.length ; i++){
+    accessoriesLinks[i].addEventListener('click', () => {
+        gsap.to(accessoriesLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < accessoriesLinks.length ; i++){
+                    accessoriesLinks[i].style.display = 'none';
+                }
+            }
+        })
+
+        accessoryStates = false
+    })
+}
+
+for (let i = 0 ; i < generalLinks.length ; i++){
+    generalLinks[i].addEventListener('click', () => {
+        gsap.to(generalLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < generalLinks.length ; i++){
+                    generalLinks[i].style.display = 'none';
+                }
+            }
+        })
+
+        generalStates = false
+    })
+}
