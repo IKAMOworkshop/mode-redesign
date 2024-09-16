@@ -1,3 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+.hero {
+  font-weight: 300;
+  font-size: 12rem;
+  line-height: 100%;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 120%;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 120%;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+.body-bold {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.body-light {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.caption-bold {
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 120%;
+}
+
+.caption-light {
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 120%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-100 {
+  gap: 100px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.nav {
+  padding: 16px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  overflow: visible;
+}
+
+.dropdown {
+  position: absolute;
+  top: 48px;
+  display: none;
+}
+
+.cart-button {
+  padding: 0px 8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(19, 19, 19);
+}
+
+.mode-logo {
+  fill: rgb(19, 19, 19);
+}
+
 * {
   box-sizing: border-box;
   text-rendering: geometricPrecision;
@@ -6,18 +113,14 @@
 
 html {
   overflow-x: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 
 body {
-  background-color: rgb(27, 28, 39);
+  background-color: rgb(255, 255, 255);
   box-sizing: border-box;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
   text-rendering: geometricPrecision;
-  overflow: hidden;
   cursor: default;
 }
 
@@ -48,11 +151,27 @@ canvas {
 }
 
 ::-moz-selection {
-  background: rgb(255, 255, 255);
-  color: rgb(11, 13, 16);
+  background: rgb(19, 19, 19);
+  color: rgb(255, 255, 255);
 }
 
 ::selection {
-  background: rgb(255, 255, 255);
-  color: rgb(11, 13, 16);
+  background: rgb(19, 19, 19);
+  color: rgb(255, 255, 255);
+}
+
+.text-light {
+  color: rgb(255, 255, 255);
+}
+
+.text-dark {
+  color: rgb(19, 19, 19);
+}
+
+.bg-light {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg-dark {
+  background-color: rgb(19, 19, 19);
 }/*# sourceMappingURL=style.css.map */

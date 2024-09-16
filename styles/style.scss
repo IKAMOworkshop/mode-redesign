@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import './typography';
+@import './utils';
+@import './navigation';
 
 // Setup
 *{
@@ -9,16 +13,14 @@
 
 html{
     overflow-x: hidden;
-    user-select: none;
 }
 
 body{
-    background-color:  rgb(27, 28, 39);
+    background-color:  rgba(255, 255, 255, 1);
     box-sizing: border-box;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
     font-optical-sizing: auto;
     text-rendering: geometricPrecision;
-    overflow: hidden;
     cursor: default;
 }
 
@@ -49,6 +51,23 @@ canvas{
 }
 
 ::selection{
-    background: rgba(255, 255, 255, 1);
-    color: rgba(11,13,16,1);
+    background: rgba(19, 19, 19, 1);
+    color: rgba(255,255,255,1);
+}
+
+// Colors
+.text-light{
+    color: rgba(255, 255, 255, 1);
+}
+
+.text-dark{
+    color: rgba(19, 19, 19, 1);
+}
+
+.bg-light{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.bg-dark{
+    background-color: rgba(19, 19, 19, 1);
 }
