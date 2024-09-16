@@ -51,6 +51,59 @@ keyboardButton.addEventListener('click', () => {
 
         keyboardStates = false
     }
+
+    // Dropdown reset
+    if(componentStates === true || accessoryStates === true || generalStates === true) {
+        gsap.to(componentLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < componentLinks.length ; i++){
+                    componentLinks[i].style.display = 'none';
+                }
+            }
+        })
+        gsap.to(accessoriesLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < accessoriesLinks.length ; i++){
+                    accessoriesLinks[i].style.display = 'none';
+                }
+            }
+        })
+        gsap.to(generalLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < generalLinks.length ; i++){
+                    generalLinks[i].style.display = 'none';
+                }
+            }
+        })
+
+        componentStates = false
+        accessoryStates = false
+        generalStates = false
+    }
 })
 
 componentButton.addEventListener('click', () => {
@@ -88,6 +141,59 @@ componentButton.addEventListener('click', () => {
         })
 
         componentStates = false
+    }
+
+    // Dropdown reset
+    if(keyboardStates === true || accessoryStates === true || generalStates === true) {
+        gsap.to(keyboardLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < keyboardLinks.length ; i++){
+                    keyboardLinks[i].style.display = 'none';
+                }
+            }
+        })
+        gsap.to(accessoriesLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < accessoriesLinks.length ; i++){
+                    accessoriesLinks[i].style.display = 'none';
+                }
+            }
+        })
+        gsap.to(generalLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < generalLinks.length ; i++){
+                    generalLinks[i].style.display = 'none';
+                }
+            }
+        })
+
+        keyboardStates = false
+        accessoryStates = false
+        generalStates = false
     }
 })
 
@@ -127,6 +233,59 @@ accessoriesButton.addEventListener('click', () => {
 
         accessoryStates = false
     }
+
+    // Dropdown reset
+    if(keyboardStates === true || componentStates === true || generalStates === true) {
+        gsap.to(keyboardLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < keyboardLinks.length ; i++){
+                    keyboardLinks[i].style.display = 'none';
+                }
+            }
+        })
+        gsap.to(componentLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < componentLinks.length ; i++){
+                    componentLinks[i].style.display = 'none';
+                }
+            }
+        })
+        gsap.to(generalLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < generalLinks.length ; i++){
+                    generalLinks[i].style.display = 'none';
+                }
+            }
+        })
+
+        keyboardStates = false
+        componentStates = false
+        generalStates = false
+    }
 })
 
 generalButton.addEventListener('click', () => {
@@ -165,4 +324,57 @@ generalButton.addEventListener('click', () => {
 
         generalStates = false
     }
+
+        // Dropdown reset
+        if(keyboardStates === true || componentStates === true || accessoryStates === true) {
+            gsap.to(keyboardLinks, 0.5, { 
+                opacity: 0,
+                x: 16,
+                duration: .3,
+                stagger: {
+                    each: .1,
+                    from: 'end'
+                },
+                ease: 'power3.out',
+                onComplete: () => {
+                    for (let i = 0 ; i < keyboardLinks.length ; i++){
+                        keyboardLinks[i].style.display = 'none';
+                    }
+                }
+            })
+            gsap.to(componentLinks, 0.5, { 
+                opacity: 0,
+                x: 16,
+                duration: .3,
+                stagger: {
+                    each: .1,
+                    from: 'end'
+                },
+                ease: 'power3.out',
+                onComplete: () => {
+                    for (let i = 0 ; i < componentLinks.length ; i++){
+                        componentLinks[i].style.display = 'none';
+                    }
+                }
+            })
+            gsap.to(accessoriesLinks, 0.5, { 
+                opacity: 0,
+                x: 16,
+                duration: .3,
+                stagger: {
+                    each: .1,
+                    from: 'end'
+                },
+                ease: 'power3.out',
+                onComplete: () => {
+                    for (let i = 0 ; i < accessoriesLinks.length ; i++){
+                        accessoriesLinks[i].style.display = 'none';
+                    }
+                }
+            })
+    
+            keyboardStates = false
+            componentStates = false
+            accessoryStates = false
+        }
 })
