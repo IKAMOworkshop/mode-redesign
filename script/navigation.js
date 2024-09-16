@@ -1,5 +1,6 @@
 import gsap from "gsap"
 
+const homeButton = document.getElementById("home")
 const keyboardButton = document.getElementById('keyboard-nav')
 const componentButton = document.getElementById('component-nav')
 const accessoriesButton = document.getElementById('accessories-nav')
@@ -380,6 +381,76 @@ generalButton.addEventListener('click', () => {
 })
 
 // Dropdown reset on Click
+homeButton.addEventListener('click', () => {
+    if(keyboardStates === true || componentStates === true || accessoryStates === true || generalStates === true) {
+        gsap.to(keyboardLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < keyboardLinks.length ; i++){
+                    keyboardLinks[i].style.display = 'none';
+                }
+            }
+        })
+        gsap.to(componentLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < componentLinks.length ; i++){
+                    componentLinks[i].style.display = 'none';
+                }
+            }
+        })
+        gsap.to(accessoriesLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < accessoriesLinks.length ; i++){
+                    accessoriesLinks[i].style.display = 'none';
+                }
+            }
+        })
+        gsap.to(generalLinks, 0.5, { 
+            opacity: 0,
+            x: 16,
+            duration: .3,
+            stagger: {
+                each: .1,
+                from: 'end'
+            },
+            ease: 'power3.out',
+            onComplete: () => {
+                for (let i = 0 ; i < generalLinks.length ; i++){
+                    generalLinks[i].style.display = 'none';
+                }
+            }
+        })
+
+        keyboardStates = false
+        componentStates = false
+        accessoryStates = false
+        generalStates = false
+    }
+})
+
 for (let i = 0 ; i < keyboardLinks.length ; i++){
     keyboardLinks[i].addEventListener('click', () => {
         gsap.to(keyboardLinks, 0.5, { 
