@@ -69,3 +69,25 @@ canvas{
 .bg-dark{
     background-color: rgba(19, 19, 19, 1);
 }
+
+// Scroll Bars
+// Scrollbar
+/*width*/
+::-webkit-scrollbar {
+    width:0px;
+}
+
+/*track*/
+::-webkit-scrollbar-track {
+    background:rgb(15, 27, 18);
+}
+
+/*thumb*/
+::-webkit-scrollbar-thumb {
+    background:rgb(19, 21, 22);
+    border-radius:100px;
+}
+    
+body .transition {display: block}
+.w-editor .transition {display: none;}
+.no-scroll-transition {overflow: hidden; position: relative;}

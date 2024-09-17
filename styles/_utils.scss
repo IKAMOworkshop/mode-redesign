@@ -26,12 +26,32 @@
     align-self: flex-start;
 }
 
+.self-end{
+    align-self: flex-end;
+}
+
+.self-center{
+    align-self: center;
+}
+
+.gap-400{
+    gap: 800px;
+}
+
+.gap-200{
+    gap: 200px;
+}
+
 .gap-100{
     gap: 100px;
 }
 
 .gap-60{
     gap: 60px;
+}
+
+.gap-36{
+    gap: 36px;
 }
 
 .gap-24{
@@ -59,9 +79,22 @@
     transition: all .3s ease;
 }
 
+.primary-button-light{
+    padding: 0px 8px;
+    border: dashed  1px rgba(19,19,19,0.5);
+    color: rgba(19,19,19,1);
+
+    transition: all .3s ease;
+}
+
 .primary-button:hover{
     background-color: rgba(255,255,255,1);
     color: rgba(19,19,19,1);
+}
+
+.primary-button-light:hover{
+    background-color: rgba(19,19,19,1);
+    color: rgba(255,255,255,1);
 }
 
 .primary-button-icon{

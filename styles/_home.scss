@@ -1,7 +1,115 @@
-.home-container{
-    padding: 60px 16px;
+.home-dark-section-1{
+    padding: 120px 16px 60px 16px;
+}
+
+.home-dark-section-2{
+    padding: 120px 16px 60px 16px;
+}
+
+.home-light-section{
+    background-color: rgb(255, 255, 255);
+    padding: 16px 16px 60px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.hero-text{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    translate: 0% -50%;
+    padding: 0px 16px;
+    z-index: 100;
+    opacity: 0;
+}
+
+.hero-description-box-top{
+    width: 200px;
+    max-height: .8rem;
+    overflow: hidden;
+}
+.hero-description-box-bottom{
+    width: 200px;
+    max-height: .8rem;
+    overflow: hidden;
+}
+
+.hero-title{
+    max-height: 4rem;
+    overflow: hidden;
+}
+
+.hero-button{
+    width: 200px;
+    max-height: 1.1rem;
+    overflow: hidden;
 }
 
 .hero-images{
+    padding-bottom: 200px;
+}
 
+.home-header-image{
+    width: 1200px;
+    height: 680px;
+    object-fit: cover;
+    object-position: center 0%;
+    position: sticky;
+    top: 160px;
+}
+
+.keyboard-item{
+    position: relative;
+    width: 100%;
+}
+
+.home-description{
+    width: 600px;
+}
+
+.keyboard-image-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-image{
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.keyboard-image{
+    width: 100%;
+}
+
+.disabled-link{
+    pointer-events: none;
+    display: none;
+}
+
+.keyboard-item:hover > .hover-image{
+    opacity: 1;
+}
+
+.keyboard-description{
+    width: 140px;
+}
+
+.community-text{
+    position: sticky;
+    top: 480px;
+}
+
+.community-img-col{
+    padding-top: 120px;
+}
+
+.community-img{
+    width: 600px;
+}
+
+.community-col-2{
+    padding-top: 600px;
 }

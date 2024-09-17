@@ -20,7 +20,7 @@
 .description {
   font-weight: 300;
   font-size: 1.5rem;
-  line-height: 150%;
+  line-height: 120%;
 }
 
 .body-bold {
@@ -45,6 +45,10 @@
   font-weight: 300;
   font-size: 0.8rem;
   line-height: 120%;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .flex {
@@ -75,12 +79,32 @@
   align-self: flex-start;
 }
 
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.gap-400 {
+  gap: 800px;
+}
+
+.gap-200 {
+  gap: 200px;
+}
+
 .gap-100 {
   gap: 100px;
 }
 
 .gap-60 {
   gap: 60px;
+}
+
+.gap-36 {
+  gap: 36px;
 }
 
 .gap-24 {
@@ -106,9 +130,21 @@
   transition: all 0.3s ease;
 }
 
+.primary-button-light {
+  padding: 0px 8px;
+  border: dashed 1px rgba(19, 19, 19, 0.5);
+  color: rgb(19, 19, 19);
+  transition: all 0.3s ease;
+}
+
 .primary-button:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(19, 19, 19);
+}
+
+.primary-button-light:hover {
+  background-color: rgb(19, 19, 19);
+  color: rgb(255, 255, 255);
 }
 
 .primary-button-icon {
@@ -128,6 +164,7 @@
   left: 0;
   width: 100dvw;
   overflow: visible;
+  z-index: 9999;
 }
 
 .dropdown-button {
@@ -242,13 +279,181 @@ footer {
   transform: translate(16px, 0px);
 }
 
-.home-container {
-  padding: 60px 16px;
+.home-dark-section-1 {
+  padding: 120px 16px 60px 16px;
+}
+
+.home-dark-section-2 {
+  padding: 120px 16px 60px 16px;
+}
+
+.home-light-section {
+  background-color: rgb(255, 255, 255);
+  padding: 16px 16px 60px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.hero-text {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  translate: 0% -50%;
+  padding: 0px 16px;
+  z-index: 100;
+  opacity: 0;
+}
+
+.hero-description-box-top {
+  width: 200px;
+  max-height: 0.8rem;
+  overflow: hidden;
+}
+
+.hero-description-box-bottom {
+  width: 200px;
+  max-height: 0.8rem;
+  overflow: hidden;
+}
+
+.hero-title {
+  max-height: 4rem;
+  overflow: hidden;
+}
+
+.hero-button {
+  width: 200px;
+  max-height: 1.1rem;
+  overflow: hidden;
+}
+
+.hero-images {
+  padding-bottom: 200px;
+}
+
+.home-header-image {
+  width: 1200px;
+  height: 680px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 0%;
+     object-position: center 0%;
+  position: sticky;
+  top: 160px;
+}
+
+.keyboard-item {
+  position: relative;
+  width: 100%;
+}
+
+.home-description {
+  width: 600px;
+}
+
+.keyboard-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.keyboard-image {
+  width: 100%;
+}
+
+.disabled-link {
+  pointer-events: none;
+  display: none;
+}
+
+.keyboard-item:hover > .hover-image {
+  opacity: 1;
+}
+
+.keyboard-description {
+  width: 140px;
+}
+
+.community-text {
+  position: sticky;
+  top: 480px;
+}
+
+.community-img-col {
+  padding-top: 120px;
+}
+
+.community-img {
+  width: 600px;
+}
+
+.community-col-2 {
+  padding-top: 600px;
 }
 
 .envoy-white-section {
   background-color: rgb(255, 255, 255);
-  padding: 60px 16px;
+  padding: 120px 16px 60px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.envoy-dark-section {
+  padding: 24px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.project-description {
+  width: 320px;
+}
+
+.product-images {
+  width: 1096px;
+}
+
+.fixed-product-about {
+  position: sticky;
+  top: 420px;
+  align-self: start;
+  width: 620px;
+}
+
+.product-about-title {
+  width: 120px;
+}
+
+.fixed-about-2, .fixed-about-3 {
+  margin-top: -182px;
+}
+
+.data-section-border {
+  background-color: rgb(19, 19, 19);
+  width: 100%;
+  height: 1px;
+}
+
+.data-section-border-dark {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 1px;
+}
+
+.data-table {
+  width: 760px;
+}
+
+.spec-list {
+  width: 120px;
 }
 
 * {
@@ -315,4 +520,33 @@ canvas {
 
 .bg-dark {
   background-color: rgb(19, 19, 19);
+}
+
+/*width*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/*track*/
+::-webkit-scrollbar-track {
+  background: rgb(15, 27, 18);
+}
+
+/*thumb*/
+::-webkit-scrollbar-thumb {
+  background: rgb(19, 21, 22);
+  border-radius: 100px;
+}
+
+body .transition {
+  display: block;
+}
+
+.w-editor .transition {
+  display: none;
+}
+
+.no-scroll-transition {
+  overflow: hidden;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
