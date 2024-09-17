@@ -242,14 +242,18 @@ footer {
   transform: translate(16px, 0px);
 }
 
+.home-container {
+  padding: 60px 16px;
+}
+
+.envoy-white-section {
+  background-color: rgb(255, 255, 255);
+  padding: 60px 16px;
+}
+
 * {
   box-sizing: border-box;
   text-rendering: geometricPrecision;
-  overflow: hidden;
-}
-
-html {
-  overflow-x: hidden;
 }
 
 body {

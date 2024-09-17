@@ -1,92 +1,167 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mode Designs | Envoy</title>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="nav flex justify-between">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <div class="left-side-nav">
-            <a class="home" href="/">
-                <svg height="12" viewBox="0 0 93 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="mode-logo" fill-rule="evenodd" clip-rule="evenodd" d="M38.4499 24C36.2581 24 34.2855 23.5069 32.5321 22.5205C30.8006 21.5123 29.4307 20.1205 28.4225 18.3452C27.4143 16.5699 26.9102 14.4986 26.9102 12.1315V11.9014C26.9102 9.51233 27.4143 7.43014 28.4225 5.65479C29.4307 3.87945 30.8006 2.49863 32.5321 1.51233C34.2855 0.50411 36.2581 0 38.4499 0C40.6417 0 42.6033 0.50411 44.3348 1.51233C46.0663 2.49863 47.4362 3.87945 48.4444 5.65479C49.4526 7.43014 49.9567 9.51233 49.9567 11.9014V12.1315C49.9567 14.4986 49.4526 16.5699 48.4444 18.3452C47.4362 20.1205 46.0663 21.5123 44.3348 22.5205C42.6033 23.5069 40.6417 24 38.4499 24ZM38.4499 18.8712C39.6334 18.8712 40.6855 18.6082 41.606 18.0822C42.5266 17.5562 43.2499 16.789 43.7759 15.7808C44.3019 14.7726 44.5649 13.5562 44.5649 12.1315V11.9014C44.5649 10.4767 44.3019 9.26027 43.7759 8.25205C43.2499 7.24383 42.5266 6.47671 41.606 5.95068C40.6855 5.40274 39.6334 5.12877 38.4499 5.12877C37.2663 5.12877 36.2033 5.40274 35.2608 5.95068C34.3403 6.47671 33.617 7.24383 33.091 8.25205C32.5649 9.26027 32.3019 10.4767 32.3019 11.9014V12.1315C32.3019 13.5562 32.5649 14.7726 33.091 15.7808C33.617 16.789 34.3403 17.5562 35.2608 18.0822C36.2033 18.6082 37.2663 18.8712 38.4499 18.8712ZM53.457 0.493164V23.5069H62.268C63.8899 23.5069 65.4022 23.2329 66.805 22.6849C68.2077 22.137 69.4351 21.3589 70.4872 20.3507C71.5392 19.3425 72.3611 18.148 72.9529 16.7671C73.5447 15.3863 73.8406 13.863 73.8406 12.1973V11.8685C73.8406 10.1808 73.5447 8.64659 72.9529 7.26577C72.3831 5.88494 71.5721 4.69042 70.52 3.6822C69.4899 2.65207 68.2625 1.86303 66.8379 1.31508C65.4351 0.767137 63.9118 0.493164 62.268 0.493164H53.457ZM58.7173 18.6082H61.8406C63.1337 18.6082 64.2735 18.3452 65.2598 17.8192C66.268 17.2712 67.0461 16.5151 67.594 15.5507C68.1639 14.5863 68.4488 13.4685 68.4488 12.1973V11.8685C68.4488 10.5534 68.1748 9.41371 67.6269 8.44933C67.0789 7.48494 66.3118 6.73974 65.3255 6.21371C64.3392 5.66577 63.1776 5.3918 61.8406 5.3918H58.7173V18.6082ZM78.233 22.3891C79.0002 23.1343 79.9645 23.5069 81.1262 23.5069H92.9289V18.7397H82.9673C82.7919 18.7397 82.6385 18.674 82.507 18.5425C82.3755 18.411 82.3097 18.2575 82.3097 18.0822V14.2028H92.2385V9.66577H82.3097V5.91782C82.3097 5.74248 82.3755 5.58905 82.507 5.45755C82.6385 5.32604 82.7919 5.26029 82.9673 5.26029H92.9289V0.493164H81.1262C79.9645 0.493164 79.0002 0.876726 78.233 1.64385C77.4878 2.38905 77.1152 3.34248 77.1152 4.50412V19.4959C77.1152 20.6575 77.4878 21.6219 78.233 22.3891ZM0 0.493164V23.5069H5.12877V7.63168L9.79726 19.2329H13.6438L18.3123 7.63169V23.5069H23.4411V0.493164H16.3726L11.7205 11.6945L7.06849 0.493164H0Z" fill="white"/>
-                    </svg>
-            </a>
-        </div>
+        <link rel="stylesheet" href="/styles//reset.css">
+        <link rel="stylesheet" href="/styles/style.css">
 
-        <div class="right-side-nav flex gap-100">
-            <div class="keyboard-nav">
-                <button id="keyboard-nav" class="dropdown-button caption-bold text-dark">
-                    <div class="dropdown-button-bg"></div>
-                    KEYBAORDS
-                </button>
-                <div id="keyboard-drop" class="flex flex-column dropdown">
-                    <a href="/" class="dropdown-text caption-light text-dark">TEMPO - 60%</a>
-                    <a href="/product/envoy/" class="dropdown-text caption-light text-dark">ENVOY - 65%</a>
-                    <a href="/" class="dropdown-text caption-light text-dark">SIXTYFIVE - 65%</a>
-                    <a href="/" class="dropdown-text caption-light text-dark">SONNET - 75%</a>
-                    <a href="/" class="dropdown-text caption-light text-dark">LOOP - TKL</a>
-                </div>
-            </div>
-            <div class="product-nav flex gap-24">
-                <div class="component-nav">
-                    <button id="component-nav" class="dropdown-button caption-bold text-dark">
-                        <div class="dropdown-button-bg"></div>
-                        COMPONENTS
-                    </button>
-                    <div id="component-drop" class="flex flex-column dropdown">
-                        <a href="/" class="dropdown-text caption-light text-dark">KEYCAPS</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">SWITCHES</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">STABLIZERS</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">LUBE</a>
-                    </div>
-                </div>
-                <div class="accessories-nav">
-                    <button id="accessories-nav" class="dropdown-button caption-bold text-dark">
-                        <div class="dropdown-button-bg"></div>
-                        ACCESSORIES
-                    </button>
-                    <div id="accessories-drop" class="flex flex-column dropdown">
-                        <a href="/" class="dropdown-text caption-light text-dark">ARTISANS</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">DESK MATS</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">ART PRINTS</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">GIFT CARDS</a>
-                    </div>
-                </div>
-                <div class="general-nav">
-                    <button id="general-nav" class="dropdown-button caption-bold text-dark">
-                        <div class="dropdown-button-bg"></div>
-                        GENERAL
-                    </button>
-                    <div id="general-drop" class="flex flex-column dropdown">
-                        <a href="/" class="dropdown-text caption-light text-dark">LIMITED</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">SUPPORT</a>
-                    </div>
-                </div>
-            </div>
-            <div class="user-nav flex gap-24">
-                <a href="/" class="dropdown-button caption-light text-dark">
-                    <div class="dropdown-button-bg"></div>
-                    ACCOUNT
+        <title>Mode Designs | Envoy</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="nav flex justify-between">
+
+            <div class="left-side-nav">
+                <a class="home" href="/">
+                    <svg height="12" viewBox="0 0 93 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="mode-logo" fill-rule="evenodd" clip-rule="evenodd" d="M38.4499 24C36.2581 24 34.2855 23.5069 32.5321 22.5205C30.8006 21.5123 29.4307 20.1205 28.4225 18.3452C27.4143 16.5699 26.9102 14.4986 26.9102 12.1315V11.9014C26.9102 9.51233 27.4143 7.43014 28.4225 5.65479C29.4307 3.87945 30.8006 2.49863 32.5321 1.51233C34.2855 0.50411 36.2581 0 38.4499 0C40.6417 0 42.6033 0.50411 44.3348 1.51233C46.0663 2.49863 47.4362 3.87945 48.4444 5.65479C49.4526 7.43014 49.9567 9.51233 49.9567 11.9014V12.1315C49.9567 14.4986 49.4526 16.5699 48.4444 18.3452C47.4362 20.1205 46.0663 21.5123 44.3348 22.5205C42.6033 23.5069 40.6417 24 38.4499 24ZM38.4499 18.8712C39.6334 18.8712 40.6855 18.6082 41.606 18.0822C42.5266 17.5562 43.2499 16.789 43.7759 15.7808C44.3019 14.7726 44.5649 13.5562 44.5649 12.1315V11.9014C44.5649 10.4767 44.3019 9.26027 43.7759 8.25205C43.2499 7.24383 42.5266 6.47671 41.606 5.95068C40.6855 5.40274 39.6334 5.12877 38.4499 5.12877C37.2663 5.12877 36.2033 5.40274 35.2608 5.95068C34.3403 6.47671 33.617 7.24383 33.091 8.25205C32.5649 9.26027 32.3019 10.4767 32.3019 11.9014V12.1315C32.3019 13.5562 32.5649 14.7726 33.091 15.7808C33.617 16.789 34.3403 17.5562 35.2608 18.0822C36.2033 18.6082 37.2663 18.8712 38.4499 18.8712ZM53.457 0.493164V23.5069H62.268C63.8899 23.5069 65.4022 23.2329 66.805 22.6849C68.2077 22.137 69.4351 21.3589 70.4872 20.3507C71.5392 19.3425 72.3611 18.148 72.9529 16.7671C73.5447 15.3863 73.8406 13.863 73.8406 12.1973V11.8685C73.8406 10.1808 73.5447 8.64659 72.9529 7.26577C72.3831 5.88494 71.5721 4.69042 70.52 3.6822C69.4899 2.65207 68.2625 1.86303 66.8379 1.31508C65.4351 0.767137 63.9118 0.493164 62.268 0.493164H53.457ZM58.7173 18.6082H61.8406C63.1337 18.6082 64.2735 18.3452 65.2598 17.8192C66.268 17.2712 67.0461 16.5151 67.594 15.5507C68.1639 14.5863 68.4488 13.4685 68.4488 12.1973V11.8685C68.4488 10.5534 68.1748 9.41371 67.6269 8.44933C67.0789 7.48494 66.3118 6.73974 65.3255 6.21371C64.3392 5.66577 63.1776 5.3918 61.8406 5.3918H58.7173V18.6082ZM78.233 22.3891C79.0002 23.1343 79.9645 23.5069 81.1262 23.5069H92.9289V18.7397H82.9673C82.7919 18.7397 82.6385 18.674 82.507 18.5425C82.3755 18.411 82.3097 18.2575 82.3097 18.0822V14.2028H92.2385V9.66577H82.3097V5.91782C82.3097 5.74248 82.3755 5.58905 82.507 5.45755C82.6385 5.32604 82.7919 5.26029 82.9673 5.26029H92.9289V0.493164H81.1262C79.9645 0.493164 79.0002 0.876726 78.233 1.64385C77.4878 2.38905 77.1152 3.34248 77.1152 4.50412V19.4959C77.1152 20.6575 77.4878 21.6219 78.233 22.3891ZM0 0.493164V23.5069H5.12877V7.63168L9.79726 19.2329H13.6438L18.3123 7.63169V23.5069H23.4411V0.493164H16.3726L11.7205 11.6945L7.06849 0.493164H0Z" fill="white"/>
+                        </svg>
                 </a>
-                <a href="/" class="disabled cart-button caption-light">(00)</a>
             </div>
+
+            <div class="right-side-nav flex gap-100">
+                <div class="keyboard-nav">
+                    <button id="keyboard-nav" class="dropdown-button caption-bold text-dark">
+                        <div class="dropdown-button-bg"></div>
+                        KEYBAORDS
+                    </button>
+                    <div id="keyboard-drop" class="flex flex-column dropdown">
+                        <a href="/" class="dropdown-text caption-light text-dark">TEMPO - 60%</a>
+                        <a href="/product/envoy/" class="dropdown-text caption-light text-dark">ENVOY - 65%</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">SIXTYFIVE - 65%</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">SONNET - 75%</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">LOOP - TKL</a>
+                    </div>
+                </div>
+                <div class="product-nav flex gap-24">
+                    <div class="component-nav">
+                        <button id="component-nav" class="dropdown-button caption-bold text-dark">
+                            <div class="dropdown-button-bg"></div>
+                            COMPONENTS
+                        </button>
+                        <div id="component-drop" class="flex flex-column dropdown">
+                            <a href="/" class="dropdown-text caption-light text-dark">KEYCAPS</a>
+                            <a href="/" class="dropdown-text caption-light text-dark">SWITCHES</a>
+                            <a href="/" class="dropdown-text caption-light text-dark">STABLIZERS</a>
+                            <a href="/" class="dropdown-text caption-light text-dark">LUBE</a>
+                        </div>
+                    </div>
+                    <div class="accessories-nav">
+                        <button id="accessories-nav" class="dropdown-button caption-bold text-dark">
+                            <div class="dropdown-button-bg"></div>
+                            ACCESSORIES
+                        </button>
+                        <div id="accessories-drop" class="flex flex-column dropdown">
+                            <a href="/" class="dropdown-text caption-light text-dark">ARTISANS</a>
+                            <a href="/" class="dropdown-text caption-light text-dark">DESK MATS</a>
+                            <a href="/" class="dropdown-text caption-light text-dark">ART PRINTS</a>
+                            <a href="/" class="dropdown-text caption-light text-dark">GIFT CARDS</a>
+                        </div>
+                    </div>
+                    <div class="general-nav">
+                        <button id="general-nav" class="dropdown-button caption-bold text-dark">
+                            <div class="dropdown-button-bg"></div>
+                            GENERAL
+                        </button>
+                        <div id="general-drop" class="flex flex-column dropdown">
+                            <a href="/" class="dropdown-text caption-light text-dark">LIMITED</a>
+                            <a href="/" class="dropdown-text caption-light text-dark">SUPPORT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-nav flex gap-24">
+                    <a href="/" class="dropdown-button caption-light text-dark">
+                        <div class="dropdown-button-bg"></div>
+                        ACCOUNT
+                    </a>
+                    <a href="/" class="disabled cart-button caption-light">(00)</a>
+                </div>
+            </div>
+            
+        </nav>
+
+        <div class="envoy-container" data-taxi-view>
+
+            <div class="envoy-white-section">
+                <img src="/public/landing/sixty-five-header.png" alt="">
+            </div>
+            
         </div>
-        
-    </nav>
 
-    <main data-taxi>
-      <div data-taxi-view>
-        <h1 class="hero">ENVOY</h1>
-      </div>
-    </main>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-border"></div>
+            <div class="footer-container flex justify-between">
 
-    <script type="module" src="/main.js"></script>
-    <script type="module" src="/script/routing.js"></script>
-    <script type="module" src="/script/navigation.js"></script>
-  </body>
+                <div class="footer-logo flex flex-column justify-between">
+                    <svg width="619" height="148" viewBox="0 0 619 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.63604 0C3.86649 0 0 3.86903 0 8.64172V15.9382C0 16.1234 0.00593479 16.3079 0.0176795 16.4914C0.00589316 17.2416 0 18.0604 0 18.9478V127.35C0 129.87 0.0436538 131.883 0.130962 133.387C0.0447867 133.921 0 134.469 0 135.027C0 140.667 4.56904 145.239 10.2052 145.239H24.9461C30.5823 145.239 35.1513 140.667 35.1513 135.027C35.1513 134.721 35.1379 134.418 35.1116 134.119C35.3322 132.581 35.4424 130.455 35.4424 127.741V61.9181C36.1136 62.6994 40.4097 68.4288 48.3306 79.1064C56.2514 89.6535 61.5543 96.5548 64.2394 99.8101L65.8503 101.959C66.9243 103.261 68.6697 104.628 71.0862 106.06C73.6369 107.362 76.3892 108.014 79.3426 108.014C82.4305 108.014 85.2498 107.297 87.8005 105.865C90.4856 104.303 92.1636 103.131 92.8348 102.349C93.5062 101.438 94.7145 99.8753 96.4597 97.6617C98.205 95.4481 102.3 89.9791 108.744 81.2547C115.188 72.4003 120.088 65.9548 123.444 61.9181V127.35C123.444 129.689 123.533 131.719 123.709 133.441C123.629 133.958 123.587 134.487 123.587 135.027C123.587 140.667 128.156 145.239 133.792 145.239H148.533C154.169 145.239 158.738 140.667 158.738 135.027C158.738 134.545 158.705 134.071 158.641 133.608C158.939 131.869 159.088 129.913 159.088 127.741V19.3385C159.088 16.5826 158.974 14.4332 158.747 12.8902V8.64172C158.747 3.86903 154.881 0 150.111 0H128.184C125.315 0 122.633 1.42595 121.028 3.80532L91.2791 47.8848C90.3944 49.1956 89.9176 50.5473 89.7732 51.8661C86.4928 56.0656 83.016 60.523 79.3426 65.2386L67.6714 50.3777C67.5048 49.1355 67.0418 47.8671 66.2198 46.6333L37.7152 3.84816C36.1134 1.44404 33.417 0 30.5295 0H8.63604ZM305.82 20.8992C291.187 6.9664 273.935 0 254.065 0C244.802 0 235.807 1.82298 227.081 5.46895C218.355 9.11492 210.635 14.1281 203.923 20.5086C197.21 26.889 191.84 34.8321 187.812 44.3375C183.786 53.7129 181.771 63.8044 181.771 74.6121C181.771 94.4044 188.888 111.462 203.117 125.786C217.482 140.109 234.867 147.271 255.274 147.271C275.681 147.271 292.865 140.044 306.826 125.591C320.789 111.007 327.77 93.428 327.77 72.8542C327.77 52.1504 320.453 34.8321 305.82 20.8992ZM228.894 101.957C221.242 94.665 217.415 85.2244 217.415 73.6355C217.415 62.0465 221.242 52.6712 228.894 45.5094C236.547 38.2176 245.138 34.5715 254.67 34.5715C264.201 34.5715 272.794 38.1524 280.447 45.3141C288.233 52.4759 292.125 61.9815 292.125 73.8308C292.125 85.6803 288.3 95.1207 280.648 102.152C272.995 109.184 264.404 112.699 254.872 112.699C245.339 112.699 236.68 109.119 228.894 101.957ZM537.486 110.357H599.51C602.599 110.357 604.88 110.487 606.357 110.747L606.397 110.751L606.441 110.754L606.472 110.757C606.653 110.748 606.834 110.743 607.017 110.743C612.653 110.743 617.222 115.315 617.222 120.955V126.683C617.229 127.029 617.232 127.382 617.232 127.74C617.232 127.853 617.232 127.964 617.231 128.076C617.231 128.189 617.229 128.301 617.228 128.413C617.227 128.479 617.226 128.544 617.225 128.609L617.222 128.729V134.571C617.222 140.211 612.653 144.783 607.017 144.783C606.448 144.783 605.891 144.736 605.347 144.647C603.625 144.834 601.612 144.928 599.309 144.928H519.564C518.246 144.928 517.005 144.88 515.841 144.782H512.004C506.368 144.782 501.799 140.21 501.799 134.57C501.799 133.821 501.88 133.09 502.033 132.386C501.906 130.967 501.843 129.353 501.843 127.545V18.9469C501.843 17.3019 501.921 15.7887 502.077 14.4074C501.895 13.6437 501.799 12.8468 501.799 12.0273C501.799 6.38744 506.368 1.81542 512.004 1.81542L517.636 1.81542C518.445 1.77767 519.289 1.75879 520.168 1.75879H599.51C602.599 1.75879 604.88 1.88901 606.357 2.14943C606.702 2.1773 607.056 2.22605 607.42 2.29567C607.664 2.27819 607.91 2.2693 608.159 2.2693C613.795 2.2693 618.364 6.84132 618.364 12.4812V26.0972C618.364 31.7371 613.795 36.3091 608.159 36.3091C607.309 36.3091 606.484 36.2052 605.694 36.0093C603.897 36.2233 601.769 36.3303 599.309 36.3303H537.486V56.0576H581.895C583.845 56.0576 585.474 56.1096 586.781 56.2135C587.321 56.108 587.878 56.0527 588.448 56.0527H591.587C596.356 56.0527 600.223 59.9217 600.223 64.6944V81.9046C600.223 86.6773 596.356 90.5464 591.587 90.5464H588.448C587.924 90.5464 587.41 90.4996 586.912 90.41C585.331 90.5562 583.524 90.6293 581.491 90.6293H537.486V110.357ZM368.367 1.56348L373.365 1.58968H375.391C375.568 1.58968 375.744 1.59418 375.919 1.60307L405.622 1.75879C425.089 1.75879 442.205 8.59499 456.974 22.2674C471.742 35.8096 479.124 52.542 479.124 72.4644C479.124 92.257 471.875 109.25 457.377 123.443C443.012 137.636 425.558 144.733 405.018 144.733H368.166C366.614 144.733 365.173 144.674 363.842 144.557H360.861C355.225 144.557 350.656 139.985 350.656 134.345C350.656 133.844 350.692 133.351 350.762 132.868C350.551 131.216 350.445 129.377 350.445 127.349V18.7516C350.445 16.4813 350.481 14.6577 350.552 13.2807C350.482 12.7978 350.445 12.3039 350.445 11.8016C350.445 6.1617 355.014 1.58968 360.651 1.58968H366.6C367.173 1.57221 367.762 1.56348 368.367 1.56348ZM405.622 110.161C415.289 110.161 424.015 106.711 431.801 99.8094C439.589 92.7777 443.482 83.9883 443.482 73.4411C443.482 62.8938 439.654 54.1044 432.004 47.0729C424.484 39.9112 415.625 36.3303 405.421 36.3303H386.088V110.161H405.622Z" fill="white"/>
+                    </svg>
+                    <p class="text-light caption-light">COPYRIGHT © 2024 MODE DESIGNS.</p>
+                </div>
+
+                <div class="footer-letter flex flex-column justify-end">
+                    <div class="flex flex-column gap-24">
+                        <h3 class="text-light subtitle">SUBSCRIBE TO OUR
+                            NEWS LETTER.
+                        </h3>
+                        <form class="flex justify-between align-center gap-24" action="">
+                            <input class="footer-input description text-light" type="email" placeholder="YOUR EMAIL...">
+                            <button class="letter-submit bg-light  flex justify-center align-center">
+                                <svg class="letter-submit-icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.34315 0.778417L13.7071 6.82784C14.0976 7.19906 14.0976 7.80094 13.7071 8.17216L7.34315 14.2216C6.95262 14.5928 6.31946 14.5928 5.92893 14.2216C5.53841 13.8504 5.53841 13.2485 5.92893 12.8773L10.5858 8.45058H0V6.54942H10.5858L5.92893 2.12273C5.53841 1.75151 5.53841 1.14964 5.92893 0.778417C6.31946 0.407194 6.95262 0.407194 7.34315 0.778417Z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-links flex flex-column justify-between gap-100">
+
+                    <div class="footer-links-group flex flex-column gap-16">
+                        <h4 class="text-light body-bold">GENERAL LINKS</h4>
+                        <div class="flex flex-column gap-4 footer-links-container">
+                            <a href="/" class="text-light caption-light footer-link">UPDATES</a>
+                            <a href="/" class="text-light caption-light footer-link">TERMS OF SERVICE</a>
+                            <a href="/" class="text-light caption-light footer-link">PRIVACY POLICY</a>
+                            <a href="/" class="text-light caption-light footer-link">RETURNS & REFUNDS</a>
+                            <a href="/" class="text-light caption-light footer-link">CORPORATE PROGRAMS</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links-group flex flex-column gap-16">
+                        <h4 class="text-light caption-bold">GET IN TOUCH</h4>
+                        <div class="flex flex-column gap-4 footer-links-container">
+                            <a href="/" class="text-light caption-light footer-link">SUPPORT@MODEDESIGNS.COM</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links-group flex flex-column gap-16">
+                        <h4 class="text-light caption-bold">GET IN TOUCH</h4>
+                        <div class="flex flex gap-8">
+                            <a href="/" class="primary-button caption-light">DC</a>
+                            <a href="/" class="primary-button caption-light">IG</a>
+                            <a href="/" class="primary-button caption-light">X</a>
+                            <a href="/" class="primary-button caption-light">YT</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="primary-button caption-light self-start flex align-center gap-8">
+                    <svg class="primary-button-icon" width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 0L6 6L0 6L3 0Z"/>
+                    </svg>
+                    RETURN
+                </button>
+
+            </div>
+        </footer>
+
+        <script type="module" src="/script/navigation.js"></script>
+        <script type="module" src="/script/smoothScroll.js"></script>
+    </body>
 </html>

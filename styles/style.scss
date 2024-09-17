@@ -4,15 +4,13 @@
 @import './utils';
 @import './navigation';
 
+@import './home';
+@import './envoy';
+
 // Setup
 *{
     box-sizing: border-box;
     text-rendering: geometricPrecision;
-    overflow: hidden;
-}
-
-html{
-    overflow-x: hidden;
 }
 
 body{
