@@ -55,3 +55,40 @@
 .spec-list{
     width: 120px;
 }
+
+// Animation Prep
+.about-envoy{
+    transform: translateY(12rem);
+}
+
+.about-2{
+    opacity: 0;
+}
+
+.about-3{
+    opacity: 0;
+}
+
+.feature-border{
+    opacity: 0;
+    transform: scaleX(.2);
+    transform-origin: left;
+}
+
+.specs-border{
+    opacity: 0;
+    transform: scaleX(.2);
+    transform-origin: left;
+}
+
+.product-about-title{
+    transform: translateY(.8rem);
+}
+
+.modular-design{
+    transform: translateY(12rem);
+}
+
+.modular-image{
+    opacity: 0;
+}
