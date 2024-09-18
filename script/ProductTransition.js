@@ -7,9 +7,21 @@ gsap.registerPlugin(ScrollTrigger)
 export default class ProductTransition extends Transition {
 
     onLeave({ from, trigger, done }) {
-        console.log(from, trigger)
 
-        setTimeout(done(), 500)
+        gsap.to('.overlay', {
+            opacity: 1,
+            duration: 1,
+            ease: 'power3.out',
+        })
+        gsap.to('.inserted-container', {
+            scale: 1,
+            y: 1,
+            duration: 1,
+            ease: 'power3.out',
+            delay: 1,
+            onComplete: done
+        })
+
     }
 
     onEnter({ to, trigger, done }) {
@@ -19,22 +31,26 @@ export default class ProductTransition extends Transition {
             y: 0,
             duration: 1.5,
             ease: 'power3.out',
+            delay: .4
         })
         gsap.to('.envoy-config', {
             y: 0,
             duration: .8,
             ease: 'power3.out',
+            delay: .4
         })
         gsap.to('.envoy-hero', {
             y: 0,
             opacity: 1,
             duration: 1.5,
             ease: 'power3.out',
+            delay: .4
         })
         gsap.to('.envoy-intro', {
             y: 0,
             duration: 1,
             ease: 'power3.out',
+            delay: .4,
             onComplete: done()
         })
 

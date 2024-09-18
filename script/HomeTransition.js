@@ -7,9 +7,19 @@ gsap.registerPlugin(ScrollTrigger)
 export default class HomeTransition extends Transition {
 
     onLeave({ from, trigger, done }) {
-        console.log(from, trigger)
-
-        setTimeout(done(), 500)
+        gsap.to('.overlay', {
+            opacity: 1,
+            duration: 1,
+            ease: 'power3.out',
+        })
+        gsap.to('.inserted-container-envoy', {
+            scale: 1,
+            y: 1,
+            duration: 1,
+            ease: 'power3.out',
+            delay: 1,
+            onComplete: done
+        })
     }
 
     onEnter({ to, trigger, done }) {
@@ -20,21 +30,25 @@ export default class HomeTransition extends Transition {
             opacity: 0,
             duration: 2,
             ease: 'power3.out',
+            delay: .4
         })
         gsap.from('.description-box-move', {
             y: 12,
             duration: 1.5,
             ease: 'power3.out',
+            delay: .4
         })
         gsap.from('.hero-title-move', {
             y: 80,
             duration: 1.5,
             ease: 'power3.out',
+            delay: .4
         })
         gsap.from('.hero-button-move', {
             y: 20,
             duration: 1.5,
             ease: 'power3.out',
+            delay: .4,
             onComplete: done()
         })
 

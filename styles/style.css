@@ -171,6 +171,46 @@
   fill: rgb(19, 19, 19);
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(19, 19, 19, 0.5);
+  z-index: 99998;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.inserted-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgb(255, 255, 255);
+  z-index: 99999;
+  opacity: 1;
+  pointer-events: none;
+  transform-origin: bottom center;
+  transform: scale(0.8) translate(0, 100%);
+}
+
+.inserted-container-envoy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgb(19, 19, 19);
+  z-index: 99999;
+  opacity: 1;
+  pointer-events: none;
+  transform-origin: bottom center;
+  transform: scale(0.8) translate(0, 100%);
+}
+
 .nav {
   padding: 16px;
   background-color: rgb(255, 255, 255);
