@@ -1,3 +1,14 @@
+.transition-in{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    transform-origin: top;
+}
+
 .home-dark-section-1{
     padding: 120px 16px 600px 16px;
 }
@@ -12,6 +23,10 @@
     display: flex;
     flex-direction: column;
     gap: 120px;
+}
+
+#hero-1{
+    transform-origin: bottom;
 }
 
 .hero-text{

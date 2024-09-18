@@ -10,8 +10,15 @@
     <title>Mode Designs</title>
 </head>
 <body>
+    <div class="transition-in flex justify-center align-center gap-24">
+        <div class="counter flex gap-24">
+            <p class="text-dark caption-bold loader-text">0</p>
+            <p class="text-dark caption-light loader">%</p>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="nav flex justify-between">
+    <nav id="nav" class="nav flex justify-between">
 
         <div class="left-side-nav">
             <a id="home" href="/">
@@ -85,7 +92,6 @@
     <!-- Content -->
     <main data-taxi>
         <div class="home-container" data-taxi-view>
-
             <div class="home-dark-section-1">
 
                 <div class="hero-text flex justify-between align-center">
@@ -376,6 +382,9 @@
                 </div>
 
             </div>
+
+            <script type="module" src="/script/landingLoad.js"></script>
+            <script type="module" src="/script/landingScroll.js"></script>
         </div>
     </main>
 
@@ -453,6 +462,5 @@
     <script type="module" src="/script/navigation.js"></script>
     <script type="module" src="/script/smoothScroll.js"></script>
     <script src="/script/landingHover.js" data-taxi-reload></script>
-    <script type="module" src="/script/landingScroll.js"></script>
 </body>
 </html>
