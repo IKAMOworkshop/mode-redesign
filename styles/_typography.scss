@@ -50,3 +50,14 @@
 .text-center{
     text-align: center;
 }
+
+// Masking
+.caption-mask{
+    overflow: hidden;
+    max-height: .8rem;
+}
+
+.description-mask{
+    overflow: hidden;
+    max-height: 1.5rem;
+}

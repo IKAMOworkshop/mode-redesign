@@ -51,6 +51,16 @@
   text-align: center;
 }
 
+.caption-mask {
+  overflow: hidden;
+  max-height: 0.8rem;
+}
+
+.description-mask {
+  overflow: hidden;
+  max-height: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -280,7 +290,7 @@ footer {
 }
 
 .home-dark-section-1 {
-  padding: 120px 16px 60px 16px;
+  padding: 120px 16px 600px 16px;
 }
 
 .home-dark-section-2 {
@@ -303,7 +313,7 @@ footer {
   translate: 0% -50%;
   padding: 0px 16px;
   z-index: 100;
-  opacity: 0;
+  opacity: 1;
 }
 
 .hero-description-box-top {
@@ -361,6 +371,7 @@ footer {
 
 .home-description {
   width: 600px;
+  transform: translateY(1.5rem);
 }
 
 .keyboard-image-container {
@@ -406,6 +417,31 @@ footer {
 
 .community-col-2 {
   padding-top: 600px;
+}
+
+.mask-title {
+  transform: translateY(0.8rem);
+}
+
+.row-1 {
+  opacity: 0;
+}
+
+.row-2 {
+  opacity: 0;
+}
+
+.row-3 {
+  opacity: 0;
+}
+
+#community-button {
+  max-height: 22px;
+  overflow: hidden;
+}
+
+.community-button {
+  transform: translateY(18px);
 }
 
 .envoy-white-section {

@@ -99,7 +99,7 @@
                             </div>
                         </div>
                         <div class="hero-description-box-bottom">
-                            <div class="description-box-move-top">
+                            <div class="description-box-move">
                                 <p class="hero-description text-light caption-light">NEW TECHNOLOGY.</p>
                                 <p class="hero-description text-light caption-light">SAME ICONIC LOOKS.</p>
                                 <p class="hero-description text-light caption-light">TYPING EXPERIENCE.</p>
@@ -126,9 +126,9 @@
                 </div>
 
                 <div class="hero-images flex flex-column align-center justify-center gap-400">
-                    <img class="home-header-image" src="/landing/sixty-five-header.png" alt="">
-                    <img class="home-header-image" src="/landing/sonnet-header.png" alt="">
-                    <img class="home-header-image" src="/landing/envoy-header.png" alt="">
+                    <img id="hero-1" class="home-header-image" src="/landing/sixty-five-header.png" alt="">
+                    <img id="hero-2" class="home-header-image" src="/landing/sonnet-header.png" alt="">
+                    <img id="hero-3" class="home-header-image" src="/landing/envoy-header.png" alt="">
                 </div>
 
             </div>
@@ -136,19 +136,37 @@
             <div class="home-light-section">
 
                 <div class="section-container flex justify-between">
-                    <h2 class="text-dark caption-bold">
-                        CLEAN, MODERN, WITH 
-                        <br />A TOUCH OF NATURE.
-                    </h2>
-                    <p class="text-dark description home-description">MODE DESIGNS CREATE DELICATE KEYBOARDS FOR DISCERNING INDIVIDUALS. NO MATTER IF YOU’RE A DESIGNER, DEVELOPER, OR GAMERS. WE OFFERS THE MOST PREMIUM TYPING EXPERIENCE.</p>
+                    <div id="product-title" class="flex flex-column">
+                        <div class="caption-mask">
+                            <h2 class="text-dark caption-bold mask-title product-description">CLEAN, MODERN, WITH </h2>
+                        </div>
+                        <div class="caption-mask">
+                            <h2 class="text-dark caption-bold mask-title product-description">A TOUCH OF NATURE.</h2>
+                        </div>
+                    </div>
+                    <div id="product-description" class="flex flex-column">
+                        <div class="description-mask">
+                            <p class="text-dark description home-description">MODE DESIGNS CREATE DELICATE KEYBOARDS FOR</p>                        
+                        </div>
+                        <div class="description-mask">
+                            <p class="text-dark description home-description">DISCERNING INDIVIDUALS. NO MATTER IF YOU’RE A</p>                        
+                        </div>
+                        <div class="description-mask">
+                            <p class="text-dark description home-description">DESIGNER, DEVELOPER, OR GAMERS. WE OFFERS THE</p>                        
+                        </div>
+                        <div class="description-mask">
+                            <p class="text-dark description home-description">MOST PREMIUM TYPING EXPERIENCE.</p>                        
+                        </div>
+                    </div>
                 </div>
 
                 <div class="section-container flex flex-column gap-16">
-
-                    <h2 class="text-dark caption-bold">FEATURED KEYBOARD.</h2>
+                    <div id="feature-keyboard" class="caption-mask">
+                        <h2 class="text-dark caption-bold mask-title feature-keyboard">FEATURED KEYBOARD.</h2>
+                    </div>
 
                     <div class="keyboard-collection flex flex-column gap-36">
-                        <div class="home-keyboard-table flex justify-between gap-16">
+                        <div id="row-1" class="home-keyboard-table flex justify-between gap-16 row-1">
 
                             <div class="keyboard-item flex flex-column gap-8">
                                 <div id="tempo-button" class="keyboard-buttons flex justify-between">
@@ -211,7 +229,7 @@
                             </div>
                             
                         </div>
-                        <div class="home-keyboard-table flex gap-16">
+                        <div class="home-keyboard-table flex gap-16 row-2">
     
                             <div class="keyboard-item flex flex-column gap-8">
                                 <div id="sonnet-button" class="keyboard-buttons flex justify-between">
@@ -263,11 +281,13 @@
                 </div>
 
                 <div class="section-container flex flex-column gap-16">
-                    
-                    <h2 class="text-dark caption-bold">FEATURED COMPONENTS.</h2>
+
+                    <div id="feature-component" class="caption-mask">
+                        <h2 class="text-dark caption-bold mask-title feature-component">FEATURED COMPONENTS.</h2>
+                    </div>
 
                     <div class="keyboard-collection flex flex-column gap-36">
-                        <div class="home-keyboard-table flex justify-between gap-16">
+                        <div class="home-keyboard-table flex justify-between gap-16 row-3">
 
                             <div class="keyboard-item flex flex-column gap-8">
                                 <div id="keycaps-button" class="keyboard-buttons flex justify-end">
@@ -324,12 +344,20 @@
             <div class="home-dark-section-2">
     
                 <div class="community-text flex flex-column gap-36">
-                    <p class="text-light caption-bold text-center">
-                        WE’RE NOT JUST KEYBOARD SELLERS,
-                        <br />WE’RE A COMMUNITY OF KEYBOARD ENTHUSIAST.
-                        <br />TAG US TO SHOW YOUR WORK TO THE WORLD.
-                    </p>
-                    <button class="primary-button caption-light self-center">JOIN OUR COMMUNITY</button>
+                    <div id="community-title" class="flex flex-column">
+                        <div class="caption-mask">
+                            <h2 class="text-light caption-bold mask-title text-center community-title">WE’RE NOT JUST KEYBOARD SELLERS,</h2>
+                        </div>
+                        <div class="caption-mask">
+                            <h2 class="text-light caption-bold mask-title text-center community-title">WE’RE A COMMUNITY OF KEYBOARD ENTHUSIAST.</h2>
+                        </div>
+                        <div class="caption-mask">
+                            <h2 class="text-light caption-bold mask-title text-center community-title">TAG US TO SHOW YOUR WORK TO THE WORLD.</h2>
+                        </div>
+                    </div>
+                    <div id="community-button" class="button-mask self-center">
+                        <button class="primary-button caption-light community-button">JOIN OUR COMMUNITY</button>
+                    </div>
                 </div>
 
                 <div class="community-img-col flex justify-between">
@@ -425,5 +453,6 @@
     <script type="module" src="/script/navigation.js"></script>
     <script type="module" src="/script/smoothScroll.js"></script>
     <script src="/script/landingHover.js" data-taxi-reload></script>
+    <script type="module" src="/script/landingScroll.js"></script>
 </body>
 </html>
