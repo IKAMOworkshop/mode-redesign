@@ -54,7 +54,7 @@ const borderIn = (trigger, element, scale, opacity) => {
             start: '0% 80%',
             end: '20% 20%',
             scrub: true,
-            markers: true
+            markers: false
         }
     })
     

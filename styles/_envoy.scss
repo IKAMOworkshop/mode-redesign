@@ -57,6 +57,23 @@
 }
 
 // Animation Prep
+.envoy-title{
+    transform: translateY(12rem);
+}
+
+.envoy-intro{
+    transform: translateY(12rem);
+}
+
+.envoy-hero{
+    opacity: 0;
+    transform: translateY(200px);
+}
+
+.envoy-config{
+    transform: translateY(20px);
+}
+
 .about-envoy{
     transform: translateY(12rem);
 }
@@ -91,4 +108,8 @@
 
 .modular-image{
     opacity: 0;
+}
+
+.mod-image{
+    width: 100px;
 }

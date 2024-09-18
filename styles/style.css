@@ -295,7 +295,7 @@ footer {
 }
 
 .transition-in {
-  position: absolute;
+  position: fixed;
   background-color: rgb(255, 255, 255);
   width: 100dvw;
   height: 100dvh;
@@ -522,6 +522,23 @@ footer {
   width: 120px;
 }
 
+.envoy-title {
+  transform: translateY(12rem);
+}
+
+.envoy-intro {
+  transform: translateY(12rem);
+}
+
+.envoy-hero {
+  opacity: 0;
+  transform: translateY(200px);
+}
+
+.envoy-config {
+  transform: translateY(20px);
+}
+
 .about-envoy {
   transform: translateY(12rem);
 }
@@ -556,6 +573,10 @@ footer {
 
 .modular-image {
   opacity: 0;
+}
+
+.mod-image {
+  width: 100px;
 }
 
 * {

@@ -11,6 +11,13 @@
         <title>Mode Designs | Envoy</title>
     </head>
     <body>
+        <div class="transition-in flex justify-center align-center gap-24">
+            <div class="counter flex gap-24">
+                <p class="text-dark caption-bold loader-text">0</p>
+                <p class="text-dark caption-light loader">%</p>
+            </div>
+        </div>
+
         <!-- Navigation -->
         <nav class="nav flex justify-between">
 
@@ -89,14 +96,34 @@
 
                 <div class="section-container flex justify-end">
                     <div class="project-description flex flex-column gap-60">
-                        <p class="text-dark caption-light">THE ENVOY IS MODE DESIGNS’ LATEST ITERATION OF THE 65% KEYBOARD LAYOUT. WHETHER YOU’RE WORKING FROM HOME, IN THE OFFICE, OR GAMING - THE ENVOY HAS HUNDREDS OF COMBINATIONS TO HELP YOU CRAFT YOUR PERFECT KEYBOARD.</p>
-                        <button class="primary-button-light caption-light self-start">CONFIGURE YOURS</button>
+                        <div class="flex flex-column">
+                            <div class="caption-mask">
+                                <h2 class="text-dark caption-light envoy-intro">THE ENVOY IS MODE DESIGNS’ LATEST ITERATION OF</h2>
+                            </div>
+                            <div class="caption-mask">
+                                <h2 class="text-dark caption-light envoy-intro">THE 65% KEYBOARD LAYOUT. WHETHER YOU’RE</h2>
+                            </div>
+                            <div class="caption-mask">
+                                <h2 class="text-dark caption-light envoy-intro">WORKING FROM HOME, IN THE OFFICE, OR GAMING -</h2>
+                            </div>
+                            <div class="caption-mask">
+                                <h2 class="text-dark caption-light envoy-intro">THE ENVOY HAS HUNDREDS OF COMBINATIONS TO</h2>
+                            </div>
+                            <div class="caption-mask">
+                                <h2 class="text-dark caption-light envoy-intro">HELP YOU CRAFT YOUR PERFECT KEYBOARD.</h2>
+                            </div>
+                        </div>
+                        <div id="community-button" class="button-mask self-start">
+                            <button class="primary-button-light caption-light envoy-config">CONFIGURE YOURS</button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="section-container flex flex-column gap-60">
-                    <h1 class="text-dark hero">THE ENVOY.</h1>
-                    <img src="/product/envoy-header.png" alt="">
+                    <div class="hero-mask">
+                        <h1 class="text-dark hero envoy-title">THE ENVOY.</h1>
+                    </div>
+                    <img class="envoy-hero" src="/product/envoy-header.png" alt="">
                 </div>
 
                 <div class="section-container flex flex-column gap-60 hero-mask">
@@ -141,7 +168,7 @@
                                     <h2 class="text-dark caption-bold product-about-title product-features">FROM ENVOY.</h2>
                                 </div>
                             </div>
-                            <div id="product-title" class="flex flex-column">
+                            <div class="flex flex-column">
                                 <div class="caption-mask">
                                     <h2 class="text-dark caption-light product-about-title product-features">PRODUCT</h2>
                                 </div>
@@ -189,10 +216,8 @@
                     </div>
                 </div>
 
+                <img class="modular-image" src="/product/modular.png" alt="">
                 
-                <div class="modular-image" class="section-container flex flex-column gap-60">
-                    <img src="/product/modular.png" alt="">
-                </div>
 
             </div>
 
@@ -413,7 +438,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <script type="module" src="/script/productScroll.js"></script>
         </div>
 
@@ -489,6 +514,7 @@
 
         <script type="module" src="/script/navigation.js"></script>
         <script type="module" src="/script/smoothScroll.js"></script>
+        <script type="module" src="/script/envoyLoad.js"></script>
 
     </body>
 </html>
