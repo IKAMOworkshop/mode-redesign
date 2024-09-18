@@ -349,6 +349,16 @@ footer {
   width: 100%;
 }
 
+.keyboard-buttons {
+  padding: 16px;
+  width: 100%;
+  position: absolute;
+  z-index: 200;
+  translate: 0% -45%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
 .home-description {
   width: 600px;
 }
