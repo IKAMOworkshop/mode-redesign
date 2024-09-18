@@ -18,429 +18,433 @@
             </div>
         </div>
 
-        <!-- Navigation -->
-        <nav class="nav flex justify-between">
+    <!-- Navigation -->
+    <nav id="nav" class="nav flex justify-between">
 
-            <div class="left-side-nav">
-                <a id="home" href="/">
-                    <svg height="12" viewBox="0 0 93 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="mode-logo" fill-rule="evenodd" clip-rule="evenodd" d="M38.4499 24C36.2581 24 34.2855 23.5069 32.5321 22.5205C30.8006 21.5123 29.4307 20.1205 28.4225 18.3452C27.4143 16.5699 26.9102 14.4986 26.9102 12.1315V11.9014C26.9102 9.51233 27.4143 7.43014 28.4225 5.65479C29.4307 3.87945 30.8006 2.49863 32.5321 1.51233C34.2855 0.50411 36.2581 0 38.4499 0C40.6417 0 42.6033 0.50411 44.3348 1.51233C46.0663 2.49863 47.4362 3.87945 48.4444 5.65479C49.4526 7.43014 49.9567 9.51233 49.9567 11.9014V12.1315C49.9567 14.4986 49.4526 16.5699 48.4444 18.3452C47.4362 20.1205 46.0663 21.5123 44.3348 22.5205C42.6033 23.5069 40.6417 24 38.4499 24ZM38.4499 18.8712C39.6334 18.8712 40.6855 18.6082 41.606 18.0822C42.5266 17.5562 43.2499 16.789 43.7759 15.7808C44.3019 14.7726 44.5649 13.5562 44.5649 12.1315V11.9014C44.5649 10.4767 44.3019 9.26027 43.7759 8.25205C43.2499 7.24383 42.5266 6.47671 41.606 5.95068C40.6855 5.40274 39.6334 5.12877 38.4499 5.12877C37.2663 5.12877 36.2033 5.40274 35.2608 5.95068C34.3403 6.47671 33.617 7.24383 33.091 8.25205C32.5649 9.26027 32.3019 10.4767 32.3019 11.9014V12.1315C32.3019 13.5562 32.5649 14.7726 33.091 15.7808C33.617 16.789 34.3403 17.5562 35.2608 18.0822C36.2033 18.6082 37.2663 18.8712 38.4499 18.8712ZM53.457 0.493164V23.5069H62.268C63.8899 23.5069 65.4022 23.2329 66.805 22.6849C68.2077 22.137 69.4351 21.3589 70.4872 20.3507C71.5392 19.3425 72.3611 18.148 72.9529 16.7671C73.5447 15.3863 73.8406 13.863 73.8406 12.1973V11.8685C73.8406 10.1808 73.5447 8.64659 72.9529 7.26577C72.3831 5.88494 71.5721 4.69042 70.52 3.6822C69.4899 2.65207 68.2625 1.86303 66.8379 1.31508C65.4351 0.767137 63.9118 0.493164 62.268 0.493164H53.457ZM58.7173 18.6082H61.8406C63.1337 18.6082 64.2735 18.3452 65.2598 17.8192C66.268 17.2712 67.0461 16.5151 67.594 15.5507C68.1639 14.5863 68.4488 13.4685 68.4488 12.1973V11.8685C68.4488 10.5534 68.1748 9.41371 67.6269 8.44933C67.0789 7.48494 66.3118 6.73974 65.3255 6.21371C64.3392 5.66577 63.1776 5.3918 61.8406 5.3918H58.7173V18.6082ZM78.233 22.3891C79.0002 23.1343 79.9645 23.5069 81.1262 23.5069H92.9289V18.7397H82.9673C82.7919 18.7397 82.6385 18.674 82.507 18.5425C82.3755 18.411 82.3097 18.2575 82.3097 18.0822V14.2028H92.2385V9.66577H82.3097V5.91782C82.3097 5.74248 82.3755 5.58905 82.507 5.45755C82.6385 5.32604 82.7919 5.26029 82.9673 5.26029H92.9289V0.493164H81.1262C79.9645 0.493164 79.0002 0.876726 78.233 1.64385C77.4878 2.38905 77.1152 3.34248 77.1152 4.50412V19.4959C77.1152 20.6575 77.4878 21.6219 78.233 22.3891ZM0 0.493164V23.5069H5.12877V7.63168L9.79726 19.2329H13.6438L18.3123 7.63169V23.5069H23.4411V0.493164H16.3726L11.7205 11.6945L7.06849 0.493164H0Z" fill="white"/>
-                        </svg>
-                </a>
+        <div class="left-side-nav">
+            <a id="home" href="/" data-transition="home">
+                <svg height="12" viewBox="0 0 93 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="mode-logo" fill-rule="evenodd" clip-rule="evenodd" d="M38.4499 24C36.2581 24 34.2855 23.5069 32.5321 22.5205C30.8006 21.5123 29.4307 20.1205 28.4225 18.3452C27.4143 16.5699 26.9102 14.4986 26.9102 12.1315V11.9014C26.9102 9.51233 27.4143 7.43014 28.4225 5.65479C29.4307 3.87945 30.8006 2.49863 32.5321 1.51233C34.2855 0.50411 36.2581 0 38.4499 0C40.6417 0 42.6033 0.50411 44.3348 1.51233C46.0663 2.49863 47.4362 3.87945 48.4444 5.65479C49.4526 7.43014 49.9567 9.51233 49.9567 11.9014V12.1315C49.9567 14.4986 49.4526 16.5699 48.4444 18.3452C47.4362 20.1205 46.0663 21.5123 44.3348 22.5205C42.6033 23.5069 40.6417 24 38.4499 24ZM38.4499 18.8712C39.6334 18.8712 40.6855 18.6082 41.606 18.0822C42.5266 17.5562 43.2499 16.789 43.7759 15.7808C44.3019 14.7726 44.5649 13.5562 44.5649 12.1315V11.9014C44.5649 10.4767 44.3019 9.26027 43.7759 8.25205C43.2499 7.24383 42.5266 6.47671 41.606 5.95068C40.6855 5.40274 39.6334 5.12877 38.4499 5.12877C37.2663 5.12877 36.2033 5.40274 35.2608 5.95068C34.3403 6.47671 33.617 7.24383 33.091 8.25205C32.5649 9.26027 32.3019 10.4767 32.3019 11.9014V12.1315C32.3019 13.5562 32.5649 14.7726 33.091 15.7808C33.617 16.789 34.3403 17.5562 35.2608 18.0822C36.2033 18.6082 37.2663 18.8712 38.4499 18.8712ZM53.457 0.493164V23.5069H62.268C63.8899 23.5069 65.4022 23.2329 66.805 22.6849C68.2077 22.137 69.4351 21.3589 70.4872 20.3507C71.5392 19.3425 72.3611 18.148 72.9529 16.7671C73.5447 15.3863 73.8406 13.863 73.8406 12.1973V11.8685C73.8406 10.1808 73.5447 8.64659 72.9529 7.26577C72.3831 5.88494 71.5721 4.69042 70.52 3.6822C69.4899 2.65207 68.2625 1.86303 66.8379 1.31508C65.4351 0.767137 63.9118 0.493164 62.268 0.493164H53.457ZM58.7173 18.6082H61.8406C63.1337 18.6082 64.2735 18.3452 65.2598 17.8192C66.268 17.2712 67.0461 16.5151 67.594 15.5507C68.1639 14.5863 68.4488 13.4685 68.4488 12.1973V11.8685C68.4488 10.5534 68.1748 9.41371 67.6269 8.44933C67.0789 7.48494 66.3118 6.73974 65.3255 6.21371C64.3392 5.66577 63.1776 5.3918 61.8406 5.3918H58.7173V18.6082ZM78.233 22.3891C79.0002 23.1343 79.9645 23.5069 81.1262 23.5069H92.9289V18.7397H82.9673C82.7919 18.7397 82.6385 18.674 82.507 18.5425C82.3755 18.411 82.3097 18.2575 82.3097 18.0822V14.2028H92.2385V9.66577H82.3097V5.91782C82.3097 5.74248 82.3755 5.58905 82.507 5.45755C82.6385 5.32604 82.7919 5.26029 82.9673 5.26029H92.9289V0.493164H81.1262C79.9645 0.493164 79.0002 0.876726 78.233 1.64385C77.4878 2.38905 77.1152 3.34248 77.1152 4.50412V19.4959C77.1152 20.6575 77.4878 21.6219 78.233 22.3891ZM0 0.493164V23.5069H5.12877V7.63168L9.79726 19.2329H13.6438L18.3123 7.63169V23.5069H23.4411V0.493164H16.3726L11.7205 11.6945L7.06849 0.493164H0Z" fill="white"/>
+                    </svg>
+            </a>
+        </div>
+
+        <div class="right-side-nav flex gap-100">
+            <div class="keyboard-nav">
+                <button id="keyboard-nav" class="dropdown-button caption-bold text-dark">
+                    <div class="dropdown-button-bg"></div>
+                    KEYBAORDS
+                </button>
+                <div id="keyboard-drop" class="flex flex-column dropdown">
+                    <a href="/" class="dropdown-text caption-light text-dark">TEMPO - 60%</a>
+                    <a href="/product/envoy/" class="dropdown-text caption-light text-dark" data-transition="product">ENVOY - 65%</a>
+                    <a href="/" class="dropdown-text caption-light text-dark">SIXTYFIVE - 65%</a>
+                    <a href="/" class="dropdown-text caption-light text-dark">SONNET - 75%</a>
+                    <a href="/" class="dropdown-text caption-light text-dark">LOOP - TKL</a>
+                </div>
             </div>
-
-            <div class="right-side-nav flex gap-100">
-                <div class="keyboard-nav">
-                    <button id="keyboard-nav" class="dropdown-button caption-bold text-dark">
+            <div class="product-nav flex gap-24">
+                <div class="component-nav">
+                    <button id="component-nav" class="dropdown-button caption-bold text-dark">
                         <div class="dropdown-button-bg"></div>
-                        KEYBAORDS
+                        COMPONENTS
                     </button>
-                    <div id="keyboard-drop" class="flex flex-column dropdown">
-                        <a href="/" class="dropdown-text caption-light text-dark">TEMPO - 60%</a>
-                        <a href="/product/envoy/" class="dropdown-text caption-light text-dark">ENVOY - 65%</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">SIXTYFIVE - 65%</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">SONNET - 75%</a>
-                        <a href="/" class="dropdown-text caption-light text-dark">LOOP - TKL</a>
+                    <div id="component-drop" class="flex flex-column dropdown">
+                        <a href="/" class="dropdown-text caption-light text-dark">KEYCAPS</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">SWITCHES</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">STABLIZERS</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">LUBE</a>
                     </div>
                 </div>
-                <div class="product-nav flex gap-24">
-                    <div class="component-nav">
-                        <button id="component-nav" class="dropdown-button caption-bold text-dark">
-                            <div class="dropdown-button-bg"></div>
-                            COMPONENTS
-                        </button>
-                        <div id="component-drop" class="flex flex-column dropdown">
-                            <a href="/" class="dropdown-text caption-light text-dark">KEYCAPS</a>
-                            <a href="/" class="dropdown-text caption-light text-dark">SWITCHES</a>
-                            <a href="/" class="dropdown-text caption-light text-dark">STABLIZERS</a>
-                            <a href="/" class="dropdown-text caption-light text-dark">LUBE</a>
-                        </div>
-                    </div>
-                    <div class="accessories-nav">
-                        <button id="accessories-nav" class="dropdown-button caption-bold text-dark">
-                            <div class="dropdown-button-bg"></div>
-                            ACCESSORIES
-                        </button>
-                        <div id="accessories-drop" class="flex flex-column dropdown">
-                            <a href="/" class="dropdown-text caption-light text-dark">ARTISANS</a>
-                            <a href="/" class="dropdown-text caption-light text-dark">DESK MATS</a>
-                            <a href="/" class="dropdown-text caption-light text-dark">ART PRINTS</a>
-                            <a href="/" class="dropdown-text caption-light text-dark">GIFT CARDS</a>
-                        </div>
-                    </div>
-                    <div class="general-nav">
-                        <button id="general-nav" class="dropdown-button caption-bold text-dark">
-                            <div class="dropdown-button-bg"></div>
-                            GENERAL
-                        </button>
-                        <div id="general-drop" class="flex flex-column dropdown">
-                            <a href="/" class="dropdown-text caption-light text-dark">LIMITED</a>
-                            <a href="/" class="dropdown-text caption-light text-dark">SUPPORT</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="user-nav flex gap-24">
-                    <a href="/" class="dropdown-button caption-light text-dark">
+                <div class="accessories-nav">
+                    <button id="accessories-nav" class="dropdown-button caption-bold text-dark">
                         <div class="dropdown-button-bg"></div>
-                        ACCOUNT
-                    </a>
-                    <a href="/" class="disabled cart-button caption-light">(00)</a>
+                        ACCESSORIES
+                    </button>
+                    <div id="accessories-drop" class="flex flex-column dropdown">
+                        <a href="/" class="dropdown-text caption-light text-dark">ARTISANS</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">DESK MATS</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">ART PRINTS</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">GIFT CARDS</a>
+                    </div>
+                </div>
+                <div class="general-nav">
+                    <button id="general-nav" class="dropdown-button caption-bold text-dark">
+                        <div class="dropdown-button-bg"></div>
+                        GENERAL
+                    </button>
+                    <div id="general-drop" class="flex flex-column dropdown">
+                        <a href="/" class="dropdown-text caption-light text-dark">LIMITED</a>
+                        <a href="/" class="dropdown-text caption-light text-dark">SUPPORT</a>
+                    </div>
                 </div>
             </div>
-            
-        </nav>
+            <div class="user-nav flex gap-24">
+                <a href="/" class="dropdown-button caption-light text-dark">
+                    <div class="dropdown-button-bg"></div>
+                    ACCOUNT
+                </a>
+                <a href="/" class="disabled cart-button caption-light">(00)</a>
+            </div>
+        </div>
+        
+    </nav>
 
-        <div class="envoy-container" data-taxi-view>
+        <!-- Content -->
+        <main data-taxi>
+            <div class="envoy-container" data-taxi-view>
 
-            <div class="envoy-white-section">
+                <div class="envoy-white-section">
 
-                <div class="section-container flex justify-end">
-                    <div class="project-description flex flex-column gap-60">
-                        <div class="flex flex-column">
-                            <div class="caption-mask">
-                                <h2 class="text-dark caption-light envoy-intro">THE ENVOY IS MODE DESIGNS’ LATEST ITERATION OF</h2>
-                            </div>
-                            <div class="caption-mask">
-                                <h2 class="text-dark caption-light envoy-intro">THE 65% KEYBOARD LAYOUT. WHETHER YOU’RE</h2>
-                            </div>
-                            <div class="caption-mask">
-                                <h2 class="text-dark caption-light envoy-intro">WORKING FROM HOME, IN THE OFFICE, OR GAMING -</h2>
-                            </div>
-                            <div class="caption-mask">
-                                <h2 class="text-dark caption-light envoy-intro">THE ENVOY HAS HUNDREDS OF COMBINATIONS TO</h2>
-                            </div>
-                            <div class="caption-mask">
-                                <h2 class="text-dark caption-light envoy-intro">HELP YOU CRAFT YOUR PERFECT KEYBOARD.</h2>
-                            </div>
-                        </div>
-                        <div id="community-button" class="button-mask self-start">
-                            <button class="primary-button-light caption-light envoy-config">CONFIGURE YOURS</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section-container flex flex-column gap-60">
-                    <div class="hero-mask">
-                        <h1 class="text-dark hero envoy-title">THE ENVOY.</h1>
-                    </div>
-                    <img class="envoy-hero" src="/product/envoy-header.png" alt="">
-                </div>
-
-                <div class="section-container flex flex-column gap-60 hero-mask">
-                    <h1 class="text-dark hero about-envoy">ABOUT ENVOY.</h1>
-                </div>
-
-                <div class="section-container flex justify-between">
-                    <div class="envoy-images flex flex-column gap-16">
-                        <img class="product-images about-image-1" src="/product/product-01.png" alt="">
-                        <img class="product-images about-image-2" src="/product/product-02.png" alt="">
-                        <img class="product-images about-image-3" src="/product/product-03.png" alt="">
-                    </div>
-
-                    <div class="fixed-product-about">
-                        <div class="fixed-about-1 flex flex-column gap-36 about-1">
-                            <h1 class="text-dark caption-bold product-about-title">FUTURISTIC DESIGN FOR TODAY.</h1>
-                            <p class="text-dark description">SHARP ANGLES BALANCED BY SMOOTH EDGES, AND AN ACCENT THAT SPANS THE WIDTH OF THE BOARD COME TOGETHER TO GIVE THE ENVOY A FUTURISTIC BUT NOT OVERWHELMING LOOK.</p>
-                        </div>
-                        <div class="fixed-about-2 flex flex-column gap-36 about-2">
-                            <h1 class="text-dark caption-bold product-about-title">NEW MOUNTING SYSTEM.</h1>
-                            <p class="text-dark description">UTILIZING AN INDUSTRY FIRST LATTICE BLOCK MOUNT SYSTEM, YOU CAN TUNE YOUR TYPING EXPERIENCE TO BE MORE FLEXIBLE OR RESPONSIVE IN MINUTES BY SIMPLY SWAPPING OUT THE BLOCKS.</p>
-                        </div>
-                        <div class="fixed-about-3 flex flex-column gap-36 about-3">
-                            <h1 class="text-dark caption-bold product-about-title">DREAM BOARD AT A DREAM COST.</h1>
-                            <p class="text-dark description">DECISIVELY REFINED - THE ENVOY TAKES CLASSIC MODE CUSTOMIZATION AND BRINGS NEW MATERIALS AND OPTIONS FOR YOU TO CHOOSE FROM. THERE’S SOMETHING FOR EVERYONE.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="data-section flex flex-column gap-16 feature-section">
-
-                    <div class="data-section-border feature-border"></div>
-
-                    <div class="data-col flex justify-between">
-                        <div class="data-title flex gap-200">
-
-                            <div id="product-features" class="flex flex-column">
-                                <div class="caption-mask">
-                                    <h2 class="text-dark caption-bold product-about-title product-features">WHAT TO EXPECT</h2>
-                                </div>
-                                <div class="caption-mask">
-                                    <h2 class="text-dark caption-bold product-about-title product-features">FROM ENVOY.</h2>
-                                </div>
-                            </div>
+                    <div class="section-container flex justify-end">
+                        <div class="project-description flex flex-column gap-60">
                             <div class="flex flex-column">
                                 <div class="caption-mask">
-                                    <h2 class="text-dark caption-light product-about-title product-features">PRODUCT</h2>
+                                    <h2 class="text-dark caption-light envoy-intro">THE ENVOY IS MODE DESIGNS’ LATEST ITERATION OF</h2>
                                 </div>
                                 <div class="caption-mask">
-                                    <h2 class="text-dark caption-light product-about-title product-features">FEATURES.</h2>
+                                    <h2 class="text-dark caption-light envoy-intro">THE 65% KEYBOARD LAYOUT. WHETHER YOU’RE</h2>
+                                </div>
+                                <div class="caption-mask">
+                                    <h2 class="text-dark caption-light envoy-intro">WORKING FROM HOME, IN THE OFFICE, OR GAMING -</h2>
+                                </div>
+                                <div class="caption-mask">
+                                    <h2 class="text-dark caption-light envoy-intro">THE ENVOY HAS HUNDREDS OF COMBINATIONS TO</h2>
+                                </div>
+                                <div class="caption-mask">
+                                    <h2 class="text-dark caption-light envoy-intro">HELP YOU CRAFT YOUR PERFECT KEYBOARD.</h2>
+                                </div>
+                            </div>
+                            <div id="community-button" class="button-mask self-start">
+                                <button class="primary-button-light caption-light envoy-config">CONFIGURE YOURS</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-container flex flex-column gap-60">
+                        <div class="hero-mask">
+                            <h1 class="text-dark hero envoy-title">THE ENVOY.</h1>
+                        </div>
+                        <img class="envoy-hero" src="/product/envoy-header.png" alt="">
+                    </div>
+
+                    <div class="section-container flex flex-column gap-60 hero-mask">
+                        <h1 class="text-dark hero about-envoy">ABOUT ENVOY.</h1>
+                    </div>
+
+                    <div class="section-container flex justify-between">
+                        <div class="envoy-images flex flex-column gap-16">
+                            <img class="product-images about-image-1" src="/product/product-01.png" alt="">
+                            <img class="product-images about-image-2" src="/product/product-02.png" alt="">
+                            <img class="product-images about-image-3" src="/product/product-03.png" alt="">
+                        </div>
+
+                        <div class="fixed-product-about">
+                            <div class="fixed-about-1 flex flex-column gap-36 about-1">
+                                <h1 class="text-dark caption-bold product-about-title">FUTURISTIC DESIGN FOR TODAY.</h1>
+                                <p class="text-dark description">SHARP ANGLES BALANCED BY SMOOTH EDGES, AND AN ACCENT THAT SPANS THE WIDTH OF THE BOARD COME TOGETHER TO GIVE THE ENVOY A FUTURISTIC BUT NOT OVERWHELMING LOOK.</p>
+                            </div>
+                            <div class="fixed-about-2 flex flex-column gap-36 about-2">
+                                <h1 class="text-dark caption-bold product-about-title">NEW MOUNTING SYSTEM.</h1>
+                                <p class="text-dark description">UTILIZING AN INDUSTRY FIRST LATTICE BLOCK MOUNT SYSTEM, YOU CAN TUNE YOUR TYPING EXPERIENCE TO BE MORE FLEXIBLE OR RESPONSIVE IN MINUTES BY SIMPLY SWAPPING OUT THE BLOCKS.</p>
+                            </div>
+                            <div class="fixed-about-3 flex flex-column gap-36 about-3">
+                                <h1 class="text-dark caption-bold product-about-title">DREAM BOARD AT A DREAM COST.</h1>
+                                <p class="text-dark description">DECISIVELY REFINED - THE ENVOY TAKES CLASSIC MODE CUSTOMIZATION AND BRINGS NEW MATERIALS AND OPTIONS FOR YOU TO CHOOSE FROM. THERE’S SOMETHING FOR EVERYONE.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-section flex flex-column gap-16 feature-section">
+
+                        <div class="data-section-border feature-border"></div>
+
+                        <div class="data-col flex justify-between">
+                            <div class="data-title flex gap-200">
+
+                                <div id="product-features" class="flex flex-column">
+                                    <div class="caption-mask">
+                                        <h2 class="text-dark caption-bold product-about-title product-features">WHAT TO EXPECT</h2>
+                                    </div>
+                                    <div class="caption-mask">
+                                        <h2 class="text-dark caption-bold product-about-title product-features">FROM ENVOY.</h2>
+                                    </div>
+                                </div>
+                                <div class="flex flex-column">
+                                    <div class="caption-mask">
+                                        <h2 class="text-dark caption-light product-about-title product-features">PRODUCT</h2>
+                                    </div>
+                                    <div class="caption-mask">
+                                        <h2 class="text-dark caption-light product-about-title product-features">FEATURES.</h2>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="data-table flex flex-column gap-16">
+                                <div class="table-row flex flex-column gap-16">
+                                    <h3 class="text-dark description">SUPPORTS ALL OS.</h3>
+                                    <div class="data-section-border feature-border"></div>
+                                </div>
+                                <div class="table-row flex flex-column gap-16">
+                                    <h3 class="text-dark description">PROGAMMABLE WITH QMK/VIA.</h3>
+                                    <div class="data-section-border feature-border"></div>
+                                </div>
+                                <div class="table-row flex flex-column gap-16">
+                                    <h3 class="text-dark description">HOSTSWAP OR SOLDER PCB.</h3>
+                                    <div class="data-section-border feature-border"></div>
+                                </div>
+                                <div class="table-row flex flex-column gap-16">
+                                    <h3 class="text-dark description">NEW MOUNTING SYSTEM.</h3>
+                                    <div class="data-section-border feature-border"></div>
+                                </div>
+                                <div class="table-row flex flex-column gap-16">
+                                    <h3 class="text-dark description">LED UNDERGLOW.</h3>
+                                    <div class="data-section-border feature-border"></div>
+                                </div>
+                                <div class="table-row flex flex-column gap-16">
+                                    <h3 class="text-dark description">OPTIONAL SOUNDS DAMPENING.</h3>
+                                    <div class="data-section-border feature-border"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modular-design" class="section-container flex flex-column">
+                        <div class="hero-mask">
+                            <h1 class="text-dark hero modular-design">FULL MODULAR</h1>
+                        </div>
+                        <div class="hero-mask">
+                            <h1 class="text-dark hero modular-design">DESIGN.</h1>
+                        </div>
+                    </div>
+
+                    <img class="modular-image" src="/product/modular.png" alt="">
+                    
+
+                </div>
+
+                <div class="envoy-dark-section">
+                    <div class="data-section flex flex-column gap-16">
+
+                        <div class="data-col flex justify-between">
+
+                            <div class="data-title flex gap-200">
+                                <div id="product-specs" class="flex flex-column">
+                                    <div class="caption-mask">
+                                        <h2 class="text-light caption-bold product-about-title product-specs">DRILLING IN</h2>
+                                    </div>
+                                    <div class="caption-mask">
+                                        <h2 class="text-light caption-bold product-about-title product-specs">THE DETAILS.</h2>
+                                    </div>
+                                </div>
+                                <div id="product-title" class="flex flex-column">
+                                    <div class="caption-mask">
+                                        <h2 class="text-light caption-light product-about-title product-specs">PRODUCT</h2>
+                                    </div>
+                                    <div class="caption-mask">
+                                        <h2 class="text-light caption-light product-about-title product-specs">SPECIFICATIONS.</h2>
+                                    </div>
                                 </div>
                             </div>
 
-                        </div>
-                        <div class="data-table flex flex-column gap-16">
-                            <div class="table-row flex flex-column gap-16">
-                                <h3 class="text-dark description">SUPPORTS ALL OS.</h3>
-                                <div class="data-section-border feature-border"></div>
-                            </div>
-                            <div class="table-row flex flex-column gap-16">
-                                <h3 class="text-dark description">PROGAMMABLE WITH QMK/VIA.</h3>
-                                <div class="data-section-border feature-border"></div>
-                            </div>
-                            <div class="table-row flex flex-column gap-16">
-                                <h3 class="text-dark description">HOSTSWAP OR SOLDER PCB.</h3>
-                                <div class="data-section-border feature-border"></div>
-                            </div>
-                            <div class="table-row flex flex-column gap-16">
-                                <h3 class="text-dark description">NEW MOUNTING SYSTEM.</h3>
-                                <div class="data-section-border feature-border"></div>
-                            </div>
-                            <div class="table-row flex flex-column gap-16">
-                                <h3 class="text-dark description">LED UNDERGLOW.</h3>
-                                <div class="data-section-border feature-border"></div>
-                            </div>
-                            <div class="table-row flex flex-column gap-16">
-                                <h3 class="text-dark description">OPTIONAL SOUNDS DAMPENING.</h3>
-                                <div class="data-section-border feature-border"></div>
+                            <div class="data-table flex flex-column gap-24 specs-section">
+                                <div class="table-row flex flex-column gap-24">
+                                    <div class="flex justify-between gap-16">
+
+                                        <h3 class="text-light body-light">SUPPORTED LAYOUTS.</h3>
+                                        <div class="flex flex-column gap-8">
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">SOLDER</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">STEPPED CAPS</li>
+                                                    <li class="text-light caption-light spec-list">SPLIT LEFT SHIFT</li>
+                                                    <li class="text-light caption-light spec-list">7U SPACEBAR</li>
+                                                    <li class="text-light caption-light spec-list">SPLIT BACKSPACE</li>
+                                                    <li class="text-light caption-light spec-list">ISO ENTER</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">HOSTSWAP</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">STEPPED CAPS</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="data-section-border-dark specs-border"></div>
+                                </div>
+                                <div class="table-row flex flex-column gap-24">
+                                    <div class="flex justify-between gap-16">
+
+                                        <h3 class="text-light body-light">BOX CONTENT.</h3>
+                                        <div class="flex flex-column justify-between gap-16">
+                                            <div class="flex gap-100">
+                                                <ul class="flex flex-column spec-list">
+                                                    <li class="text-light caption-light spec-list">CASE</li>
+                                                    <li class="text-light caption-light spec-list">PLATE</li>
+                                                    <li class="text-light caption-light spec-list">WEIGHT</li>
+                                                    <li class="text-light caption-light spec-list">ACCENT</li>
+                                                    <li class="text-light caption-light spec-list">PCB</li>
+                                                    <li class="text-light caption-light spec-list">DAUGHTERBOARD</li>
+                                                </ul>
+                                                <ul class="flex flex-column spec-list">
+                                                    <li class="text-light caption-light spec-list">STEPPED CAPS</li>
+                                                    <li class="text-light caption-light spec-list">SPLIT LEFT SHIFT</li>
+                                                    <li class="text-light caption-light spec-list">7U SPACEBAR</li>
+                                                    <li class="text-light caption-light spec-list">SPLIT BACKSPACE</li>
+                                                    <li class="text-light caption-light spec-list">ISO ENTER</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="data-section-border-dark specs-border"></div>
+                                </div>
+                                <div class="table-row flex flex-column gap-24">
+                                    <div class="flex justify-between gap-16">
+
+                                        <h3 class="text-light body-light">MEASUREMENT.</h3>
+                                        <div class="flex flex-column gap-8">
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">ANGLE</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">5.8°</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">HEIGHT</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">19.5MM</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">WIDTH</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">317MM</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">DEPTH</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">112MM</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">WEIGHT</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">1.3-3.4LBS</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="data-section-border-dark specs-border"></div>
+                                </div>
+                                <div class="table-row flex flex-column gap-24">
+                                    <div class="flex justify-between gap-16">
+
+                                        <h3 class="text-light body-light">PCB.</h3>
+                                        <div class="flex flex-column gap-8">
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">SWITCHES</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">66-69 MX-STYLE</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">CONNECTION</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">USB-C</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">THICKNESS</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">1.6MM</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">OPTIONS</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">HOTSWAP & SOLDER</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">LIGHTING</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">RGB UNDERGLOW</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">FIRMWARE</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">QMK/VIA</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">MCU</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">ARM</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="data-section-border-dark specs-border"></div>
+                                </div>
+                                <div class="table-row flex flex-column gap-24">
+                                    <div class="flex justify-between gap-16">
+
+                                        <h3 class="text-light body-light">MATERIAL.</h3>
+                                        <div class="flex flex-column gap-8">
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">CASE</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">ALUMINUM</li>
+                                                    <li class="text-light caption-light spec-list">POLY CARBONATE</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">ACCENT</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">ALUMINUM</li>
+                                                    <li class="text-light caption-light spec-list">COPPER</li>
+                                                    <li class="text-light caption-light spec-list">STAINLESS STEEL</li>
+                                                    <li class="text-light caption-light spec-list">WALNUT</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">WEIGHT</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">ALUMINUM</li>
+                                                    <li class="text-light caption-light spec-list">COPPER</li>
+                                                    <li class="text-light caption-light spec-list">STAINLESS STEEL</li>
+                                                </ul>
+                                            </div>
+                                            <div class="flex gap-100">
+                                                <p class="text-light caption-bold spec-list">PLATE</p>
+                                                <ul class="flex flex-column">
+                                                    <li class="text-light caption-light spec-list">ALUMINUM</li>
+                                                    <li class="text-light caption-light spec-list">CARBON FIBER</li>
+                                                    <li class="text-light caption-light spec-list">COPPER</li>
+                                                    <li class="text-light caption-light spec-list">FR4</li>
+                                                    <li class="text-light caption-light spec-list">POM</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="modular-design" class="section-container flex flex-column">
-                    <div class="hero-mask">
-                        <h1 class="text-dark hero modular-design">FULL MODULAR</h1>
-                    </div>
-                    <div class="hero-mask">
-                        <h1 class="text-dark hero modular-design">DESIGN.</h1>
-                    </div>
-                </div>
-
-                <img class="modular-image" src="/product/modular.png" alt="">
-                
-
+                <script type="module" src="/script/productScroll.js"></script>
             </div>
+        </main>
 
-            <div class="envoy-dark-section">
-                <div class="data-section flex flex-column gap-16">
-
-                    <div class="data-col flex justify-between">
-
-                        <div class="data-title flex gap-200">
-                            <div id="product-specs" class="flex flex-column">
-                                <div class="caption-mask">
-                                    <h2 class="text-light caption-bold product-about-title product-specs">DRILLING IN</h2>
-                                </div>
-                                <div class="caption-mask">
-                                    <h2 class="text-light caption-bold product-about-title product-specs">THE DETAILS.</h2>
-                                </div>
-                            </div>
-                            <div id="product-title" class="flex flex-column">
-                                <div class="caption-mask">
-                                    <h2 class="text-light caption-light product-about-title product-specs">PRODUCT</h2>
-                                </div>
-                                <div class="caption-mask">
-                                    <h2 class="text-light caption-light product-about-title product-specs">SPECIFICATIONS.</h2>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="data-table flex flex-column gap-24 specs-section">
-                            <div class="table-row flex flex-column gap-24">
-                                <div class="flex justify-between gap-16">
-
-                                    <h3 class="text-light body-light">SUPPORTED LAYOUTS.</h3>
-                                    <div class="flex flex-column gap-8">
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">SOLDER</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">STEPPED CAPS</li>
-                                                <li class="text-light caption-light spec-list">SPLIT LEFT SHIFT</li>
-                                                <li class="text-light caption-light spec-list">7U SPACEBAR</li>
-                                                <li class="text-light caption-light spec-list">SPLIT BACKSPACE</li>
-                                                <li class="text-light caption-light spec-list">ISO ENTER</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">HOSTSWAP</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">STEPPED CAPS</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="data-section-border-dark specs-border"></div>
-                            </div>
-                            <div class="table-row flex flex-column gap-24">
-                                <div class="flex justify-between gap-16">
-
-                                    <h3 class="text-light body-light">BOX CONTENT.</h3>
-                                    <div class="flex flex-column justify-between gap-16">
-                                        <div class="flex gap-100">
-                                            <ul class="flex flex-column spec-list">
-                                                <li class="text-light caption-light spec-list">CASE</li>
-                                                <li class="text-light caption-light spec-list">PLATE</li>
-                                                <li class="text-light caption-light spec-list">WEIGHT</li>
-                                                <li class="text-light caption-light spec-list">ACCENT</li>
-                                                <li class="text-light caption-light spec-list">PCB</li>
-                                                <li class="text-light caption-light spec-list">DAUGHTERBOARD</li>
-                                            </ul>
-                                            <ul class="flex flex-column spec-list">
-                                                <li class="text-light caption-light spec-list">STEPPED CAPS</li>
-                                                <li class="text-light caption-light spec-list">SPLIT LEFT SHIFT</li>
-                                                <li class="text-light caption-light spec-list">7U SPACEBAR</li>
-                                                <li class="text-light caption-light spec-list">SPLIT BACKSPACE</li>
-                                                <li class="text-light caption-light spec-list">ISO ENTER</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="data-section-border-dark specs-border"></div>
-                            </div>
-                            <div class="table-row flex flex-column gap-24">
-                                <div class="flex justify-between gap-16">
-
-                                    <h3 class="text-light body-light">MEASUREMENT.</h3>
-                                    <div class="flex flex-column gap-8">
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">ANGLE</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">5.8°</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">HEIGHT</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">19.5MM</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">WIDTH</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">317MM</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">DEPTH</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">112MM</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">WEIGHT</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">1.3-3.4LBS</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="data-section-border-dark specs-border"></div>
-                            </div>
-                            <div class="table-row flex flex-column gap-24">
-                                <div class="flex justify-between gap-16">
-
-                                    <h3 class="text-light body-light">PCB.</h3>
-                                    <div class="flex flex-column gap-8">
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">SWITCHES</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">66-69 MX-STYLE</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">CONNECTION</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">USB-C</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">THICKNESS</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">1.6MM</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">OPTIONS</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">HOTSWAP & SOLDER</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">LIGHTING</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">RGB UNDERGLOW</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">FIRMWARE</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">QMK/VIA</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">MCU</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">ARM</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="data-section-border-dark specs-border"></div>
-                            </div>
-                            <div class="table-row flex flex-column gap-24">
-                                <div class="flex justify-between gap-16">
-
-                                    <h3 class="text-light body-light">MATERIAL.</h3>
-                                    <div class="flex flex-column gap-8">
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">CASE</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">ALUMINUM</li>
-                                                <li class="text-light caption-light spec-list">POLY CARBONATE</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">ACCENT</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">ALUMINUM</li>
-                                                <li class="text-light caption-light spec-list">COPPER</li>
-                                                <li class="text-light caption-light spec-list">STAINLESS STEEL</li>
-                                                <li class="text-light caption-light spec-list">WALNUT</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">WEIGHT</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">ALUMINUM</li>
-                                                <li class="text-light caption-light spec-list">COPPER</li>
-                                                <li class="text-light caption-light spec-list">STAINLESS STEEL</li>
-                                            </ul>
-                                        </div>
-                                        <div class="flex gap-100">
-                                            <p class="text-light caption-bold spec-list">PLATE</p>
-                                            <ul class="flex flex-column">
-                                                <li class="text-light caption-light spec-list">ALUMINUM</li>
-                                                <li class="text-light caption-light spec-list">CARBON FIBER</li>
-                                                <li class="text-light caption-light spec-list">COPPER</li>
-                                                <li class="text-light caption-light spec-list">FR4</li>
-                                                <li class="text-light caption-light spec-list">POM</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <script type="module" src="/script/productScroll.js"></script>
-        </div>
 
         <!-- Footer -->
         <footer>
@@ -511,7 +515,8 @@
 
             </div>
         </footer>
-
+        
+        <script type="module" src="/script/routing.js"></script>
         <script type="module" src="/script/navigation.js"></script>
         <script type="module" src="/script/smoothScroll.js"></script>
         <script type="module" src="/script/envoyLoad.js"></script>
