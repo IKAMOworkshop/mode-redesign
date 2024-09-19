@@ -25,6 +25,12 @@ export default class HomeTransition extends Transition {
     onEnter({ to, trigger, done }) {
         window.scrollTo(0, 0)
 
+        gsap.from('.nav', {
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power3.out',
+            delay: .4
+        })
         gsap.from('#hero-1', {
             y: 120,
             opacity: 0,

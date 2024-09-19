@@ -27,6 +27,12 @@ export default class ProductTransition extends Transition {
     onEnter({ to, trigger, done }) {
         window.scrollTo(0, 0)
 
+        gsap.from('.nav', {
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power3.out',
+            delay: .4
+        })
         gsap.to('.envoy-title', {
             y: 0,
             duration: 1.5,
