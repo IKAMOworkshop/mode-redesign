@@ -1,4 +1,7 @@
 import gsap from 'gsap'
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"
+
+gsap.registerPlugin(ScrollToPlugin)
 
 gsap.to('.nav', {
     backgroundColor: 'rgba(19, 19, 19 , 1)',
@@ -37,4 +40,17 @@ gsap.to('.cart-button', {
     duration: 0,
     ease: 'power3.out',
     delay: 0
+})
+
+const scrollButton = document.getElementById('scroll')
+const scrollToSection = document.querySelector('#scroll-to')
+
+console.log(scrollButton)
+
+scrollButton.addEventListener('click' , () => {
+    gsap.to(window, {
+        scrollTo: '#scroll-to',
+        duration: 2,
+        ease: 'power3.out'
+    })
 })

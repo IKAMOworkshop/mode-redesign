@@ -1,4 +1,7 @@
 import gsap from "gsap"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"
+
+gsap.registerPlugin(ScrollToPlugin)
 
 const homeButton = document.getElementById("home")
 const keyboardButton = document.getElementById('keyboard-nav')
@@ -538,3 +541,13 @@ for (let i = 0 ; i < generalLinks.length ; i++){
         generalStates = false
     })
 }
+
+const returnButton = document.getElementById('return')
+
+returnButton.addEventListener('click', () => {
+    gsap.to(window, {
+        scrollTo: 0,
+        duration: 4,
+        ease: 'power3.out'
+    })
+})

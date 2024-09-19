@@ -117,7 +117,7 @@ const navScrollOpacity = (trigger, element, opacity) => {
             start: '0% 100%',
             end: '2% 90%',
             scrub: true,
-            markers: true
+            markers: false
         }
     })
     
@@ -127,4 +127,4 @@ const navScrollOpacity = (trigger, element, opacity) => {
     })
 }
 
-navScrollOpacity('.home-light-section', '.scroll-section', 0)
+navScrollOpacity('#hero-2', '.scroll-section', 0)

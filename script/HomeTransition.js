@@ -212,7 +212,7 @@ export default class HomeTransition extends Transition {
                     start: '0% 100%',
                     end: '2% 90%',
                     scrub: true,
-                    markers: true
+                    markers: false
                 }
             })
             
@@ -222,7 +222,7 @@ export default class HomeTransition extends Transition {
             })
         }
         
-        navScrollOpacity('.home-light-section', '.scroll-section', 0)
+        navScrollOpacity('#hero-2', '.scroll-section', 0)
 
         // Navigation
         const homeButton = document.getElementById("home")
