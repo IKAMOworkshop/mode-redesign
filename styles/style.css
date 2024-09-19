@@ -211,6 +211,13 @@
   transform: scale(0.8) translate(0, 100%);
 }
 
+.parallax-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 0%;
+     object-position: center 0%;
+}
+
 .nav {
   padding: 16px;
   background-color: rgb(255, 255, 255);
@@ -412,10 +419,6 @@ footer {
 .home-header-image {
   width: 1200px;
   height: 680px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 0%;
-     object-position: center 0%;
   position: sticky;
   top: 160px;
 }
@@ -482,7 +485,7 @@ footer {
 }
 
 .community-col-2 {
-  padding-top: 600px;
+  padding-top: 400px;
 }
 
 .mask-title {
@@ -508,6 +511,38 @@ footer {
 
 .community-button {
   transform: translateY(18px);
+}
+
+.community-col-1 > .community-img:nth-child(1) {
+  height: 500px;
+}
+
+.community-col-1 > .community-img:nth-child(2) {
+  height: 500px;
+}
+
+.community-col-1 > .community-img:nth-child(3) {
+  height: 660px;
+}
+
+.community-col-1 > .community-img:nth-child(4) {
+  height: 720px;
+}
+
+.community-col-2 > .community-img:nth-child(1) {
+  height: 660px;
+}
+
+.community-col-2 > .community-img:nth-child(2) {
+  height: 660px;
+}
+
+.community-col-2 > .community-img:nth-child(3) {
+  height: 500px;
+}
+
+.community-col-2 > .community-img:nth-child(4) {
+  height: 320px;
 }
 
 .envoy-white-section {

@@ -145,3 +145,9 @@
     transform-origin: bottom center;
     transform: scale(.8) translate(0, 100%);
 }
+
+// Parallax Image
+.parallax-image{
+    object-fit: cover;
+    object-position: center 0%;
+}

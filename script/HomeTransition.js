@@ -224,6 +224,54 @@ export default class HomeTransition extends Transition {
         
         navScrollOpacity('#hero-2', '.scroll-section', 0)
 
+        const parallaxImage = (trigger, element, position) => {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: trigger,
+                    start: '50% 100%',
+                    end: '100% 0%',
+                    scrub: true,
+                    markers: false
+                }
+            })
+            
+            tl.to(element, {
+                objectPosition: `0% ${position}%`,
+                duration: .5
+            })
+        }
+        
+        parallaxImage('#col-1', '#col-1', 100)
+        parallaxImage('#col-2', '#col-2', 100)
+        parallaxImage('#col-3', '#col-3', 100)
+        parallaxImage('#col-4', '#col-4', 100)
+        
+        parallaxImage('#col-5', '#col-5', 100)
+        parallaxImage('#col-6', '#col-6', 100)
+        parallaxImage('#col-7', '#col-7', 100)
+        parallaxImage('#col-8', '#col-8', 100)
+        
+        const headerParallax = (trigger, element, position) => {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: trigger,
+                    start: '100% 100%',
+                    end: '100% 0%',
+                    scrub: true,
+                    markers: false
+                }
+            })
+            
+            tl.to(element, {
+                objectPosition: `0% ${position}%`,
+                duration: .5
+            })
+        }
+        
+        headerParallax('#hero-1', '#hero-1', 100)
+        headerParallax('#hero-2', '#hero-2', 100)
+        headerParallax('#hero-3', '#hero-3', 100)
+
         // Navigation
         const homeButton = document.getElementById("home")
         const keyboardButton = document.getElementById('keyboard-nav')
@@ -763,7 +811,7 @@ export default class HomeTransition extends Transition {
                 generalStates = false
             })
         }
-        
+
         const scrollButton = document.getElementById('scroll')
 
         scrollButton.addEventListener('click' , () => {
