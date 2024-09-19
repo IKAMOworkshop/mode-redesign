@@ -33,6 +33,12 @@ gsap.to('.transition-in', {
     ease: 'power3.out',
     delay: 4
 })
+gsap.from('.nav', {
+    opacity: 0,
+    duration: 1.5,
+    ease: 'power3.out',
+    delay: .4
+})
 gsap.to('.envoy-title', {
     y: 0,
     duration: 1.5,

@@ -76,3 +76,29 @@ const imageThumbnail = (trigger, element, opacity) => {
 imageThumbnail('.row-1', '.row-1', 1)
 imageThumbnail('.row-2', '.row-2', 1)
 imageThumbnail('.row-3', '.row-3', 1)
+
+const navScroll = (trigger, element, fill, color, backgroundColor) => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: trigger,
+            start: '0% 20%',
+            end: '2% 10%',
+            scrub: true,
+            markers: true
+        }
+    })
+    
+    tl.to(element, {
+        fill: fill,
+        color: color,
+        backgroundColor: backgroundColor,
+        duration: .5
+    })
+}
+
+navScroll('.home-light-section', '.nav', null, null, 'rgba(255, 255, 255, 1)')
+navScroll('.home-light-section', '.mode-logo', 'rgba(19, 19, 19 , 1)', null, null)
+navScroll('.home-light-section', '.dropdown-button-bg', null, null, 'rgba(19, 19, 19, 1)')
+navScroll('.home-light-section', '.dropdown-button', null, 'rgba(19, 19, 19 , 1)', null)
+navScroll('.home-light-section', '.dropdown-text', null, 'rgba(19, 19, 19 , 1)', 'rgba(255, 255, 255 , 1)')
+navScroll('.home-light-section', '.cart-button', null, 'rgba(255, 255, 255 , 1)', 'rgba(19, 19, 19 , 1)')
