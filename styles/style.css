@@ -218,6 +218,12 @@
      object-position: center 0%;
 }
 
+.disabled-link {
+  pointer-events: none;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
 .nav {
   padding: 16px;
   background-color: rgb(255, 255, 255);

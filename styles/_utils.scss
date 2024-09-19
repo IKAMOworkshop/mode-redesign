@@ -151,3 +151,10 @@
     object-fit: cover;
     object-position: center 0%;
 }
+
+// Disabled
+.disabled-link{
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}
