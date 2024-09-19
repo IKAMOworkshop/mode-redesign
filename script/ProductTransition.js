@@ -100,7 +100,7 @@ export default class ProductTransition extends Transition {
             onComplete: done()
         })
 
-        const maskTitle = (trigger, element, offset, opacity) => {
+        const maskTitle = (trigger, element, offset) => {
             let tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: trigger,
@@ -113,14 +113,30 @@ export default class ProductTransition extends Transition {
             
             tl.to(element, {
                 y: offset,
-                opacity: opacity
             })
         }
         
-        maskTitle('.about-envoy', '.about-envoy', 0)
         maskTitle('#product-features', '.product-features', 0)
-        maskTitle('.modular-design', '.modular-design', 0)
         maskTitle('.product-specs', '.product-specs', 0)
+        
+        const largeTitle = (trigger, element, offset) => {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: trigger,
+                    start: 'center 100%',
+                    end: '100% 40%',
+                    scrub: true,
+                    markers: false
+                }
+            })
+            
+            tl.to(element, {
+                y: offset,
+            })
+        }
+        
+        largeTitle('.about-envoy', '.about-envoy', 0)
+        largeTitle('.modular-design', '.modular-design', 0)
         
         const fixedTitle = (trigger, element, elementTwo, opacity, opacityTwo) => {
             let tl = gsap.timeline({
