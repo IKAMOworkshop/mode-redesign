@@ -127,3 +127,26 @@ navScroll('.envoy-dark-section', '.dropdown-button-bg', null, null, 'rgba(255, 2
 navScroll('.envoy-dark-section', '.dropdown-button', null, 'rgba(255, 255, 255 , 1)', null)
 navScroll('.envoy-dark-section', '.dropdown-text', null, 'rgba(255, 255, 255 , 1)', 'rgba( 19,  19,  19 , 1)')
 navScroll('.envoy-dark-section', '.cart-button', null, 'rgba( 19,  19,  19 , 1)', 'rgba(255, 255, 255 , 1)')
+
+const parallaxImage = (trigger, element, position) => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: trigger,
+            start: '50% 100%',
+            end: '100% 0%',
+            scrub: true,
+            markers: true
+        }
+    })
+    
+    tl.to(element, {
+        objectPosition: `0% ${position}%`,
+        duration: .5
+    })
+}
+
+parallaxImage('.envoy-hero', '.envoy-hero', 100)
+parallaxImage('.about-image-1', '.about-image-1', 100)
+parallaxImage('.about-image-2', '.about-image-2', 100)
+parallaxImage('.about-image-3', '.about-image-3', 100)
+parallaxImage('.modular-image', '.modular-image', 100)
