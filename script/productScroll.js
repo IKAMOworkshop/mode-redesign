@@ -135,7 +135,7 @@ const parallaxImage = (trigger, element, position) => {
             start: '50% 100%',
             end: '100% 0%',
             scrub: true,
-            markers: true
+            markers: false
         }
     })
     
