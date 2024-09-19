@@ -1,26 +1,26 @@
-mouse = {}
+let mouse = {}
 
-hoverImages = document.querySelectorAll('.hover-image')
+let hoverImages = document.querySelectorAll('.hover-image')
 
-tempo = document.getElementById('tempo')
-tempoSize = tempo.getBoundingClientRect()
+let tempo = document.getElementById('tempo')
+let tempoSize = tempo.getBoundingClientRect()
 
-sonnet = document.getElementById('sonnet')
-sonnetSize = sonnet.getBoundingClientRect()
+let sonnet = document.getElementById('sonnet')
+let sonnetSize = sonnet.getBoundingClientRect()
 
-keycaps = document.getElementById('keycaps')
-keycapsSize = keycaps.getBoundingClientRect()
+let keycaps = document.getElementById('keycaps')
+let keycapsSize = keycaps.getBoundingClientRect()
 
-tempoButton = document.getElementById('tempo-button')
-sixtyfiveButton = document.getElementById('sixtyfive-button')
-envoyButton = document.getElementById('envoy-button')
+let tempoButton = document.getElementById('tempo-button')
+let sixtyfiveButton = document.getElementById('sixtyfive-button')
+let envoyButton = document.getElementById('envoy-button')
 
-sonnetButton = document.getElementById('sonnet-button')
-loopButton = document.getElementById('loop-button')
+let sonnetButton = document.getElementById('sonnet-button')
+let loopButton = document.getElementById('loop-button')
 
-keycapsButton = document.getElementById('keycaps-button')
-switchButton = document.getElementById('switch-button')
-stablizerButton = document.getElementById('stablizer-button')
+let keycapsButton = document.getElementById('keycaps-button')
+let switchButton = document.getElementById('switch-button')
+let stablizerButton = document.getElementById('stablizer-button')
 
 document.addEventListener('mousemove', (e) => {
     tempoSize = tempo.getBoundingClientRect()
@@ -31,9 +31,9 @@ document.addEventListener('mousemove', (e) => {
     mouse.y2 = e.clientY - sonnetSize.top
     mouse.y3 = e.clientY - keycapsSize.top
 
-    buttonPosition = Math.max(24, Math.min(mouse.y, tempoSize.height - 24))
-    buttonPositionTwo = Math.max(24, Math.min(mouse.y2, sonnetSize.height - 24))
-    buttonPositionThree = Math.max(24, Math.min(mouse.y3, sonnetSize.height - 24))
+    let buttonPosition = Math.max(24, Math.min(mouse.y, tempoSize.height - 24))
+    let buttonPositionTwo = Math.max(24, Math.min(mouse.y2, sonnetSize.height - 24))
+    let buttonPositionThree = Math.max(24, Math.min(mouse.y3, sonnetSize.height - 24))
 
     tempoButton.style.transform = `translateY(${buttonPosition}px`
     sixtyfiveButton.style.transform = `translateY(${buttonPosition}px`
