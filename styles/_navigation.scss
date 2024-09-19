@@ -120,3 +120,11 @@ footer{
 .footer-link:hover{
     transform: translate(16px, 0px);
 }
+
+// Scroll sections
+.scroll-section{
+    width: 100dvw;
+    position: fixed;
+    padding: 0px 16px;
+    bottom: 16px;
+}

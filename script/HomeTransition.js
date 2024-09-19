@@ -205,6 +205,25 @@ export default class HomeTransition extends Transition {
         navScroll('.home-dark-section-2', '.dropdown-text', null, 'rgba(255, 255, 255 , 1)', 'rgba( 19,  19,  19 , 1)')
         navScroll('.home-dark-section-2', '.cart-button', null, 'rgba( 19,  19,  19 , 1)', 'rgba(255, 255, 255 , 1)')
 
+        const navScrollOpacity = (trigger, element, opacity) => {
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: trigger,
+                    start: '0% 100%',
+                    end: '2% 90%',
+                    scrub: true,
+                    markers: true
+                }
+            })
+            
+            tl.to(element, {
+                opacity: opacity,
+                duration: .5
+            })
+        }
+        
+        navScrollOpacity('.home-light-section', '.scroll-section', 0)
+
         // Navigation
         const homeButton = document.getElementById("home")
         const keyboardButton = document.getElementById('keyboard-nav')

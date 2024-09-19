@@ -333,6 +333,13 @@ footer {
   transform: translate(16px, 0px);
 }
 
+.scroll-section {
+  width: 100dvw;
+  position: fixed;
+  padding: 0px 16px;
+  bottom: 16px;
+}
+
 .transition-in {
   position: fixed;
   background-color: rgb(255, 255, 255);
