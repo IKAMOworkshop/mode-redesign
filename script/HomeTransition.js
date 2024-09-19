@@ -763,5 +763,15 @@ export default class HomeTransition extends Transition {
                 generalStates = false
             })
         }
+        
+        const scrollButton = document.getElementById('scroll')
+
+        scrollButton.addEventListener('click' , () => {
+            gsap.to(window, {
+                scrollTo: '#scroll-to',
+                duration: 2,
+                ease: 'power3.out'
+            })
+        })
     }
 }

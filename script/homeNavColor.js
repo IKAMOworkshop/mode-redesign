@@ -43,9 +43,6 @@ gsap.to('.cart-button', {
 })
 
 const scrollButton = document.getElementById('scroll')
-const scrollToSection = document.querySelector('#scroll-to')
-
-console.log(scrollButton)
 
 scrollButton.addEventListener('click' , () => {
     gsap.to(window, {
