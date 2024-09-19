@@ -85,3 +85,29 @@ const imageThumbnail = (trigger, element, opacity) => {
 }
 
 imageThumbnail('.modular-image', '.modular-image', 1)
+
+const navScroll = (trigger, element, fill, color, backgroundColor) => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: trigger,
+            start: '0% 20%',
+            end: '2% 10%',
+            scrub: true,
+            markers: false
+        }
+    })
+    
+    tl.to(element, {
+        fill: fill,
+        color: color,
+        backgroundColor: backgroundColor,
+        duration: .5
+    })
+}
+
+navScroll('.envoy-dark-section', '.nav', null, null, 'rgba( 19,  19,  19, 1)')
+navScroll('.envoy-dark-section', '.mode-logo', 'rgba(255, 255, 255 , 1)', null, null)
+navScroll('.envoy-dark-section', '.dropdown-button-bg', null, null, 'rgba(255, 255, 255, 1)')
+navScroll('.envoy-dark-section', '.dropdown-button', null, 'rgba(255, 255, 255 , 1)', null)
+navScroll('.envoy-dark-section', '.dropdown-text', null, 'rgba(255, 255, 255 , 1)', 'rgba( 19,  19,  19 , 1)')
+navScroll('.envoy-dark-section', '.cart-button', null, 'rgba( 19,  19,  19 , 1)', 'rgba(255, 255, 255 , 1)')

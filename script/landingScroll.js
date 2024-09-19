@@ -84,7 +84,7 @@ const navScroll = (trigger, element, fill, color, backgroundColor) => {
             start: '0% 20%',
             end: '2% 10%',
             scrub: true,
-            markers: true
+            markers: false
         }
     })
     
@@ -102,3 +102,10 @@ navScroll('.home-light-section', '.dropdown-button-bg', null, null, 'rgba(19, 19
 navScroll('.home-light-section', '.dropdown-button', null, 'rgba(19, 19, 19 , 1)', null)
 navScroll('.home-light-section', '.dropdown-text', null, 'rgba(19, 19, 19 , 1)', 'rgba(255, 255, 255 , 1)')
 navScroll('.home-light-section', '.cart-button', null, 'rgba(255, 255, 255 , 1)', 'rgba(19, 19, 19 , 1)')
+
+navScroll('.home-dark-section-2', '.nav', null, null, 'rgba( 19,  19,  19, 1)')
+navScroll('.home-dark-section-2', '.mode-logo', 'rgba(255, 255, 255 , 1)', null, null)
+navScroll('.home-dark-section-2', '.dropdown-button-bg', null, null, 'rgba(255, 255, 255, 1)')
+navScroll('.home-dark-section-2', '.dropdown-button', null, 'rgba(255, 255, 255 , 1)', null)
+navScroll('.home-dark-section-2', '.dropdown-text', null, 'rgba(255, 255, 255 , 1)', 'rgba( 19,  19,  19 , 1)')
+navScroll('.home-dark-section-2', '.cart-button', null, 'rgba( 19,  19,  19 , 1)', 'rgba(255, 255, 255 , 1)')

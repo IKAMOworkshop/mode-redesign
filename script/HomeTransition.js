@@ -179,7 +179,7 @@ export default class HomeTransition extends Transition {
                     start: '0% 20%',
                     end: '2% 10%',
                     scrub: true,
-                    markers: true
+                    markers: false
                 }
             })
             
